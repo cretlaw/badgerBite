@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Collection</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,8 +15,11 @@
 
     <!-- personal css stylesheets -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/vv.css">
-    <link rel="stylesheet" href="css/indexSlider.css">
+    <link rel="stylesheet" href="css/imageGallery.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+
+
 
 
 </head>
@@ -62,91 +65,73 @@
     <div class="wrapper">
 
 
-        <!-- this is where the vv animation begins you can change the background animation
-                gif in the css stylesheet by providing a new path -->
-
-        <!-- Define our SVG clip path -->
-        <svg width='0' height='0'>
-            <defs>
-                <clipPath id="cp" clipPathUnits="objectBoundingBox">
-                    <path d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"></path>
-                </clipPath>
-            </defs>
-        </svg>
-
-        <!-- The actual elements we're using -->
-        <div class="triangle first"></div>
-        <div class="triangle second"></div>
-
-
-
-
         <!--  this is where the showcase headline goes you can change the text directly here by replacing the text 
             between the p tags -->
 
-        <div class="container site-content">
+        <div class="container site-content" style="padding-top: 20vmin;">
 
             <div class="row">
 
                 <div class="col-xs-12">
 
                     <div class="headline">
-                        <p>Show Case</p>
+                        <p>Collection</p>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- this is where round image slider begins for showcasing whatever project you want,
-             you can change the image by replacing the paths in indexSlider.css file -->
         <div class="container">
-            <div class="row" id="imgSlider">
-                <div class="col-xs-1 ">
-                    <a class="arrow" href="#" id="left-arrow">
-                        <i class="fa fa-arrow-circle-o-left"></i>
-                    </a>
-                </div>
+            <div class="gallery">
+                <img src="images/projects/VanessaVargas_01.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
+                <img src="images/projects/VanessaVargas_02.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
-                <div class="col-xs-10">
+                <img src="images/projects/VanessaVargas_03.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                
+                    <img src="images/projects/VanessaVargas_05.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    
 
+                    <img src="images/projects/VanessaVargas_06.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
-                    <div class="slider" id="slider">
-                        <div class="slide" id="slide-left">
-                            <div class="slide-holder">
-                                <div class="slide-bg bg-previous"></div>
-                                <div class="slide-bg bg-current"></div>
-                                <div class="slide-bg bg-next"></div>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-center">
-                            <div class="slide-holder">
-                                <div class="slide-bg bg-previous"></div>
-                                <div class="slide-bg bg-current"></div>
-                                <div class="slide-bg bg-next"></div>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-right">
-                            <div class="slide-holder">
-                                <div class="slide-bg bg-previous"></div>
-                                <div class="slide-bg bg-current"></div>
-                                <div class="slide-bg bg-next"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="images/projects/VanessaVargas_07.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
+                    <img src="images/projects/VanessaVargas_08.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
+                    <img src="images/projects/VanessaVargas_09.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
-                </div>
+                    <img src="images/projects/VanessaVargas_10.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
-                <div class="col-xs-1 offset-11">
-                    <a class="arrow" href="#" id="right-arrow">
-                        <i class="fa fa-arrow-circle-o-right"></i>
-                    </a>
-                </div>
+                    <img src="images/projects/VanessaVargas_11.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
 
+                    <img src="images/projects/VanessaVargas_12.jpg"
+                    alt="project name" width="100%" height="auto" class="gallery-img" />
             </div>
+        </div>
+
+        <!-- <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="fakeClass">
+
+
         </div>
 
         <div class="push"></div>
@@ -190,7 +175,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
@@ -198,8 +183,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/indexSlider.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/imageGallery.js"></script>
+
 </body>
 
 </html>
