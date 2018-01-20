@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
 
+@font-face {
+  font-family: trench100;
+  src: url('trench100free.otf');
+}
 /* importing local fonts dowloaded from the internet */
 
 @font-face {
@@ -7,10 +11,7 @@
   src: url('Absolute Xero.otf');
 }
 
-@font-face {
-  font-family: trench100;
-  src: url('trench100free.otf');
-}
+
 
 
 /* setting the background for the whole page */
@@ -26,8 +27,9 @@ body {
   margin: 0;
   margin-bottom: -12vmin; /* Equivalent to footer's height */
   padding-bottom: -12vmin; /* Equivalent to footer's height */
-  background: #B8BEB4;
-  background: radial-gradient(#B8BEB4, #71685F);
+  background: black;
+  /* background: radial-gradient(#B8BEB4, #71685F); */
+  /* background: radial-gradient(black, #71685F); */
   background-size: cover;
 }
 
@@ -124,9 +126,10 @@ body {
   /* left: 40%; */
   font-family: trench100, sans-serif;
   font-size: 8vmin;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  color: whitesmoke;
   
 }
 
@@ -504,3 +507,428 @@ Animation keyframes
     width: 15px;
   }
 }
+
+
+/* about styles start here */
+
+@font-face {
+  font-family: trench100;
+  src: url('trench100free.otf');
+}
+
+
+
+
+/* styles for about me card */
+
+.picName,
+.aboutHeadline {
+  margin-top: 10px;
+}
+
+.aboutHeadline {
+  font-family: trench100, sans-serif;
+  font-size: 6vmin;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5e6f7c;
+}
+
+.aboutContent {
+  font-family: trench100;
+  font-size: 4vmin;
+  font-weight: 700;
+  color: #5e6f7c;
+}
+
+.aboutWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .aboutWrapper {
+      height: 100%;
+  }
+}
+
+.aboutContainer {
+  margin-top: 50vmin;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.aboutContainer.fadeIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+      width: 80%;
+      min-width: 300px;
+  }
+}
+
+.aboutContainer>div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+@media (max-width: 420px) {
+  .aboutContainer>div {
+      padding: 40px 30px !important;
+  }
+}
+
+.profile {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5) url('../images/backgrounds/aboutBackground2.jpg');
+  background-size: cover;
+  height: 100%;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile .meta {
+  position: relative;
+  z-index: 1;
+}
+
+.profile .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.profile .avatar {
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.profile h2 {
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.profile .social {
+  padding-top: 15px;
+}
+
+.profile .social i {
+  margin: 0 5px;
+}
+
+.profile a {
+  color: #fff;
+}
+
+.portfolio {
+  margin-left: 200px;
+  padding: 50px !important;
+}
+
+@media (max-width: 670px) {
+  .profile {
+      position: relative;
+      width: 100%;
+      background-size: cover;
+  }
+  .profile h2 {
+      font-size: 28px;
+      margin-bottom: 5px;
+  }
+  .avatar {
+      width: 80px !important;
+  }
+  .portfolio {
+      margin: 0;
+  }
+}
+
+
+/* animated button styles */
+
+.btn-cont {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.btn-cont .btn {
+  /* background-color: black; */
+  position: relative;
+  padding: 3vmin 3vmin;
+  border: 3px solid rgb(47, 241, 193);
+  color: rgb(47, 241, 193);
+  text-decoration: none;
+  font-size: 5vmin;
+  font-family: 'trench100', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-cont .btn:hover {
+  border: none;
+}
+
+.btn-cont .btn:hover .line-1 {
+  -webkit-animation: move1 1500ms infinite ease;
+  animation: move1 1500ms infinite ease;
+}
+
+.btn-cont .btn:hover .line-2 {
+  -webkit-animation: move2 1500ms infinite ease;
+  animation: move2 1500ms infinite ease;
+}
+
+.btn-cont .btn:hover .line-3 {
+  -webkit-animation: move3 1500ms infinite ease;
+  animation: move3 1500ms infinite ease;
+}
+
+.btn-cont .btn:hover .line-4 {
+  -webkit-animation: move4 1500ms infinite ease;
+  animation: move4 1500ms infinite ease;
+}
+
+.btn-cont .line-1 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  background-color: rgb(47, 241, 193);
+  left: 0;
+  bottom: 0;
+}
+
+.btn-cont .line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: rgb(47, 241, 193);
+  left: 0;
+  top: 0;
+}
+
+.btn-cont .line-3 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  background-color: rgb(47, 241, 193);
+  right: 0;
+  top: 0;
+}
+
+.btn-cont .line-4 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: rgb(47, 241, 193);
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+      height: 100%;
+      bottom: 0;
+  }
+  54% {
+      height: 0;
+      bottom: 100%;
+  }
+  55% {
+      height: 0;
+      bottom: 0;
+  }
+  100% {
+      height: 100%;
+      bottom: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+      height: 100%;
+      bottom: 0;
+  }
+  54% {
+      height: 0;
+      bottom: 100%;
+  }
+  55% {
+      height: 0;
+      bottom: 0;
+  }
+  100% {
+      height: 100%;
+      bottom: 0;
+  }
+}
+
+@-webkit-keyframes move2 {
+  0% {
+      width: 0;
+      left: 0;
+  }
+  50% {
+      width: 100%;
+      left: 0;
+  }
+  100% {
+      width: 0;
+      left: 100%;
+  }
+}
+
+@keyframes move2 {
+  0% {
+      width: 0;
+      left: 0;
+  }
+  50% {
+      width: 100%;
+      left: 0;
+  }
+  100% {
+      width: 0;
+      left: 100%;
+  }
+}
+
+@-webkit-keyframes move3 {
+  0% {
+      height: 100%;
+      top: 0;
+  }
+  54% {
+      height: 0;
+      top: 100%;
+  }
+  55% {
+      height: 0;
+      top: 0;
+  }
+  100% {
+      height: 100%;
+      top: 0;
+  }
+}
+
+@keyframes move3 {
+  0% {
+      height: 100%;
+      top: 0;
+  }
+  54% {
+      height: 0;
+      top: 100%;
+  }
+  55% {
+      height: 0;
+      top: 0;
+  }
+  100% {
+      height: 100%;
+      top: 0;
+  }
+}
+
+@-webkit-keyframes move4 {
+  0% {
+      width: 0;
+      right: 0;
+  }
+  55% {
+      width: 100%;
+      right: 0;
+  }
+  100% {
+      width: 0;
+      right: 100%;
+  }
+}
+
+@keyframes move4 {
+  0% {
+      width: 0;
+      right: 0;
+  }
+  55% {
+      width: 100%;
+      right: 0;
+  }
+  100% {
+      width: 0;
+      right: 100%;
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.99px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.99px) {}
+
+
+/*  Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.99px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.99px) {}
+
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */

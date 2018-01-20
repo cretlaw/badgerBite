@@ -41,27 +41,6 @@ Animations
 .gallery img:hover {
     opacity: 1;
 }
-/* 
-.modal-img,
-.model-vid {
-    width: 100%;
-    height: auto;
-}
-
-.modal-body {
-    padding: 0px;
-}
-
-.modal-dialog {
-    text-align: center;
-    vertical-align: middle;
-    display: block;
-    top: 10%;
-}
-
-.modal-content {
-    border: none;
-} */
 
 @media screen and (max-width: 767px) {
     .gallery {
