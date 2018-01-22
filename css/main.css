@@ -466,11 +466,13 @@ Animation keyframes
 .picName,
 .aboutHeadline {
   margin-top: 10px;
+  font-family: trench100;
+  font-weight: 800;
 }
 
 .aboutHeadline {
   font-family: trench100, sans-serif;
-  font-size: 6vmin;
+  font-size: 5vmin;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -479,9 +481,10 @@ Animation keyframes
 
 .aboutContent {
   font-family: trench100;
-  font-size: 4vmin;
+  font-size: 3vmin;
   font-weight: 700;
   color: #5e6f7c;
+  text-align: justify;
 }
 
 .aboutWrapper {
@@ -643,7 +646,7 @@ Animation keyframes
   border: 3px solid rgb(47, 241, 193);
   color: rgb(47, 241, 193);
   text-decoration: none;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-family: 'trench100', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
