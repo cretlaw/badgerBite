@@ -98,7 +98,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin: 0;
   }
