@@ -1,0 +1,11 @@
+*
+
+!*.json
+!*.html
+!*.css
+!*.js
+!*.jpg
+!*.jpeg
+!*.png
+!README.md
+!.gitignore
