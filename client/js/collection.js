@@ -1,0 +1,41 @@
+function init() {
+
+ let imagesApp =  new Vue({
+        el: '#imgVue',
+        data: {
+            collectionImg: [],
+            imgPath: '',
+            isImgClicked: false,
+            modalStyle: '#'
+        },
+
+        beforeCreate() {
+            let vm = this
+
+            axios.get('http://localhost:8080/getProjectImgs')
+                .then(result => {
+                    vm.collectionImg = result.data.slice(0)
+                })
+
+        },
+
+        methods: {
+            //TODO: Add project name to modal
+            modalView: function (imagePath) {
+
+                this.isImgClicked = true
+                this.imgPath = imagePath
+                this.modalStyle = 'display:block'
+            },
+
+            closeModal: function () {
+                //  When the user clicks on <span> (x), close the modal
+                this.modalStyle = 'display:none'
+                this.isImgClicked = false
+            }
+
+        }
+    })
+
+}
+
