@@ -6,7 +6,7 @@ function init() {
             collectionImg: [],
             imgPath: '',
             isImgClicked: false,
-            modalStyle: '#'
+            modalStyle: '#',
         },
 
         beforeCreate() {
@@ -36,6 +36,35 @@ function init() {
 
         }
     })
+
+    let footerApp = new Vue({
+        el: '#footer',
+
+        data:{
+            phone:'123-456-7891',
+            email:'someemail@email.com',
+            phoneClick:false,
+            emailClick: false 
+        },
+
+        methods:{
+            phonePopulate: function(){
+
+                this.phoneClick = true
+        
+            },
+            emailPopulate: function(){
+                this.emailClick =true
+            },
+            toggleButtons: function(){
+                this.phoneClick = false
+                this.emailClick = false
+            }
+            
+        }
+
+    })
+
 
 }
 

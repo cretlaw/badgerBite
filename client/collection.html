@@ -111,34 +111,49 @@
 
     <!-- footer starts here -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer" v-cloak>
+        <div v-if="!phoneClick && !emailClick">
+            <div class="social-media-buttons">
 
-        <div class="social-media-buttons">
+                <div class="social-media-button facebook">
+                    <a href="#yourFBUrlGoesHere">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                </div>
 
+                <div class="social-media-button instagram">
+                    <a href="#yourInstagramUrlGoesHere">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
 
-            <div class="social-media-button facebook">
-                <a href="#yourFBUrlGoesHere">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                </a>
+                <div class="social-media-button envelope">
+
+                    <a v-on:click="emailPopulate" id="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="social-media-button phone">
+                    <div>
+                        <a v-on:click="phonePopulate">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
+        </div>
+        <div v-if="phoneClick">
+            <p  style="font-size:4vmin; color:whitesmoke; margin-top: 3vmin;">{{phone}} <p>
+                <button @click="toggleButtons" type="button" class="btn btn-light">Toggle Back</button>
 
-            <div class="social-media-button instagram">
-                <a href="#yourInstagramUrlGoesHere">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </div>
+        </div>
 
-            <div class="social-media-button envelope">
-                <a onClick="emailPopulate()" id="email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </div>
+        <div v-if="emailClick">
+        <p style="font-size:4vmin; color:whitesmoke; margin-top: 3vmin;">{{email}} <p>
+                <button @click="toggleButtons" type="button" class="btn btn-light">Toggle Back</button>
 
-            <div class="social-media-button phone">
-                <a onClick="phonePopulate()">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </a>
-            </div>
         </div>
     </footer>
 
