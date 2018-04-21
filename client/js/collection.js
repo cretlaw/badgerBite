@@ -7,6 +7,10 @@ function init() {
             imgPath: '',
             isImgClicked: false,
             modalStyle: '#',
+            phone:'123-456-7891',
+            email:'someemail@email.com',
+            phoneClick:false,
+            emailClick: false 
         },
 
         beforeCreate() {
@@ -32,27 +36,14 @@ function init() {
                 //  When the user clicks on <span> (x), close the modal
                 this.modalStyle = 'display:none'
                 this.isImgClicked = false
-            }
+            },
 
-        }
-    })
-
-    let footerApp = new Vue({
-        el: '#footer',
-
-        data:{
-            phone:'123-456-7891',
-            email:'someemail@email.com',
-            phoneClick:false,
-            emailClick: false 
-        },
-
-        methods:{
             phonePopulate: function(){
 
                 this.phoneClick = true
         
             },
+
             emailPopulate: function(){
                 this.emailClick =true
             },
@@ -60,11 +51,9 @@ function init() {
                 this.phoneClick = false
                 this.emailClick = false
             }
-            
+
         }
-
     })
-
 
 }
 

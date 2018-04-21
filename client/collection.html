@@ -63,102 +63,109 @@
 
 
     <!-- site content starts here all nested inside a wrapper tag -->
-    <div class="wrapper" id="imgVue" v-cloak>
+    <div id="imgVue" v-cloak>
+        <div class="wrapper">
 
 
-        <!--  this is where the showcase headline goes you can change the text directly here by replacing the text 
+            <!--  this is where the showcase headline goes you can change the text directly here by replacing the text 
             between the p tags -->
 
-        <div class="container site-content" style="padding-top: 20vmin;">
+            <div class="container site-content" style="padding-top: 20vmin;">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-xs-12">
+                    <div class="col-xs-12">
 
-                    <div class="headline">
-                        <p>Collection</p>
+                        <div class="headline">
+                            <p>Collection</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="gallery">
+                    <div v-for="(img, index) in collectionImg">
+                        <img :src="img" @click="modalView(img)" alt="project name" width="100%" height="auto" class="gallery-img" :id="'imgID' + (index + 1)"
+                        />
                     </div>
                 </div>
             </div>
 
-        </div>
 
-        <div class="container">
-            <div class="gallery">
-                <div v-for="(img, index) in collectionImg">
-                    <img :src="img" @click="modalView(img)" alt="project name" width="100%" height="auto" class="gallery-img" :id="'imgID' + (index + 1)"
-                    />
+            <div v-if="isImgClicked">
+                <div>
+                    <img id="myImg" :src="imgPath" alt="">
+                    <div id="myModal" :style="modalStyle" class="modal">
+                        <span @click="closeModal" class="close">&times;</span>
+                        <img class="modal-content" :src="imgPath" id="imgId">
+                        <div id="caption"></div>
+                    </div>
                 </div>
             </div>
+
+
+
+            <div class="push"></div>
         </div>
 
+        <!-- footer starts here -->
 
-        <div v-if="isImgClicked">
-            <div>
-                <img id="myImg" :src="imgPath" alt="">
-                <div id="myModal" :style="modalStyle" class="modal">
-                    <span @click="closeModal" class="close">&times;</span>
-                    <img class="modal-content" :src="imgPath" id="imgId">
-                    <div id="caption"></div>
-                </div>
-            </div>
-        </div>
+        <footer class="footer">
+            <div v-if="!phoneClick && !emailClick">
+                <div class="social-media-buttons">
 
-
-
-        <div class="push"></div>
-    </div>
-
-    <!-- footer starts here -->
-
-    <footer class="footer" id="footer" v-cloak>
-        <div v-if="!phoneClick && !emailClick">
-            <div class="social-media-buttons">
-
-                <div class="social-media-button facebook">
-                    <a href="#yourFBUrlGoesHere">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <div class="social-media-button instagram">
-                    <a href="#yourInstagramUrlGoesHere">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <div class="social-media-button envelope">
-
-                    <a v-on:click="emailPopulate" id="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <div class="social-media-button phone">
-                    <div>
-                        <a v-on:click="phonePopulate">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="social-media-button facebook">
+                        <a href="#yourFBUrlGoesHere">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
                     </div>
 
+                    <div class="social-media-button instagram">
+                        <a href="#yourInstagramUrlGoesHere">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-media-button envelope">
+
+                        <a v-on:click="emailPopulate" id="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-media-button phone">
+                        <div>
+                            <a v-on:click="phonePopulate">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div v-if="phoneClick">
-            <p  style="font-size:4vmin; color:whitesmoke; margin-top: 3vmin;">{{phone}} <p>
-                <button @click="toggleButtons" type="button" class="btn btn-light">Toggle Back</button>
+            <div v-if="phoneClick">
 
-        </div>
+                <div class ="footerInfo" >{{phone}}</div>
+                        <button class="footerToggleBtn" @click="toggleButtons" type="button" class="btn btn-light">
+                            Toggle Back
+                        </button>
 
-        <div v-if="emailClick">
-        <p style="font-size:4vmin; color:whitesmoke; margin-top: 3vmin;">{{email}} <p>
-                <button @click="toggleButtons" type="button" class="btn btn-light">Toggle Back</button>
+            </div>
 
-        </div>
-    </footer>
+            <div v-if="emailClick">
+
+                <div class ="footerInfo" >{{email}}</div>
+                        <button class="footerToggleBtn" @click="toggleButtons" type="button" class="btn btn-light">
+                            Toggle Back
+                        </button>
+
+            </div>
+        </footer>
 
 
-
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

@@ -1,18 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
-
 @font-face {
   font-family: trench100;
   src: url('trench100free.otf');
 }
+
 /* importing local fonts dowloaded from the internet */
 
 @font-face {
   font-family: absoluteXero;
   src: url('Absolute Xero.otf');
 }
-
-
-
 
 /* setting the background for the whole page */
 
@@ -25,22 +22,22 @@ html {
 body {
   height: 100%;
   margin: 0;
-  margin-bottom: -12vmin; /* Equivalent to footer's height */
-  padding-bottom: -12vmin; /* Equivalent to footer's height */
+  margin-bottom: -12vmin;
+  /* Equivalent to footer's height */
+  padding-bottom: -12vmin;
+  /* Equivalent to footer's height */
   background: black;
   /* background: radial-gradient(#B8BEB4, #71685F); */
   /* background: radial-gradient(black, #71685F); */
   background-size: cover;
 }
 
-.wrapper{
+.wrapper {
   min-height: 100%;
   margin-bottom: -12vmin;
-
 }
 
-
-.push{
+.push {
   height: 12vmin;
 }
 
@@ -51,12 +48,23 @@ body {
   height: 12vmin;
   text-align: center;
   font-family: trench100, sans-serif;
-
 }
 
+.footerInfo {
+  font-size: 4vmin;
+  color: whitesmoke;
+  margin-top: 3vmin;
+}
+
+.footerToggleBtn {
+  font-size: 3vmin;
+  font-weight: 800;
+  color: rgb(47, 241, 193);
+  margin-bottom: 5vmin;
+}
 
 /* social media styles on footer */
-  
+
 .social-media-buttons {
   text-align: center;
 }
@@ -106,10 +114,9 @@ body {
   color: #18dd32;
 }
 
-.site-content{
-  
-  padding-top: 45vmin; 
-   display: -webkit-flex;
+.site-content {
+  padding-top: 45vmin;
+  display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -117,7 +124,6 @@ body {
   align-content: center;
   text-align: center;
   justify-content: center;
-   
 }
 
 /* setting the styles for headlines */
@@ -130,9 +136,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: whitesmoke;
-  
 }
-
 
 /* ====================================
 Navigation 
@@ -195,8 +199,9 @@ nav li a {
   font-size: 4vmin;
 }
 
-a:hover, a:focus {
-  text-decoration:none;
+a:hover,
+a:focus {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -217,8 +222,6 @@ nav li:nth-of-type(3) {
 nav li:nth-of-type(4) {
   /* background-color: #FDCEA9 */
   background-color: rgb(55, 170, 141);
-
-
 }
 
 .slide-in-nav-item {
@@ -260,7 +263,6 @@ nav li:nth-of-type(4) {
 .slide-in-nav-item-delay-4-reverse {
   animation: slide-in-nav-item-reverse .3s linear 1 both;
 }
-
 
 /* ====================================
 Burger king
@@ -307,7 +309,6 @@ Burger king
 .animate-out-middle-bar {
   animation: animate-out-middle-bar .6s linear 1 both
 }
-
 
 /* ====================================
 Animation keyframes
@@ -443,13 +444,10 @@ Animation keyframes
   nav ul li a {
     font-size: 3.4vmin;
   }
- 
   .open-overlay {
     right: 1rem;
   }
- 
 }
-
 
 /* about styles start here */
 
@@ -457,9 +455,6 @@ Animation keyframes
   font-family: trench100;
   src: url('trench100free.otf');
 }
-
-
-
 
 /* styles for about me card */
 
@@ -505,7 +500,7 @@ Animation keyframes
 
 @media (min-width: 768px) {
   .aboutWrapper {
-      height: 100%;
+    height: 100%;
   }
 }
 
@@ -537,8 +532,8 @@ Animation keyframes
 
 @media (max-width: 768px) {
   .aboutContainer {
-      width: 80%;
-      min-width: 300px;
+    width: 80%;
+    min-width: 300px;
   }
 }
 
@@ -550,7 +545,7 @@ Animation keyframes
 
 @media (max-width: 420px) {
   .aboutContainer>div {
-      padding: 40px 30px !important;
+    padding: 40px 30px !important;
   }
 }
 
@@ -614,22 +609,21 @@ Animation keyframes
 
 @media (max-width: 670px) {
   .profile {
-      position: relative;
-      width: 100%;
-      background-size: cover;
+    position: relative;
+    width: 100%;
+    background-size: cover;
   }
   .profile h2 {
-      font-size: 28px;
-      margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 5px;
   }
   .avatar {
-      width: 80px !important;
+    width: 80px !important;
   }
   .portfolio {
-      margin: 0;
+    margin: 0;
   }
 }
-
 
 /* animated button styles */
 
@@ -720,160 +714,155 @@ Animation keyframes
 
 @-webkit-keyframes move1 {
   0% {
-      height: 100%;
-      bottom: 0;
+    height: 100%;
+    bottom: 0;
   }
   54% {
-      height: 0;
-      bottom: 100%;
+    height: 0;
+    bottom: 100%;
   }
   55% {
-      height: 0;
-      bottom: 0;
+    height: 0;
+    bottom: 0;
   }
   100% {
-      height: 100%;
-      bottom: 0;
+    height: 100%;
+    bottom: 0;
   }
 }
 
 @keyframes move1 {
   0% {
-      height: 100%;
-      bottom: 0;
+    height: 100%;
+    bottom: 0;
   }
   54% {
-      height: 0;
-      bottom: 100%;
+    height: 0;
+    bottom: 100%;
   }
   55% {
-      height: 0;
-      bottom: 0;
+    height: 0;
+    bottom: 0;
   }
   100% {
-      height: 100%;
-      bottom: 0;
+    height: 100%;
+    bottom: 0;
   }
 }
 
 @-webkit-keyframes move2 {
   0% {
-      width: 0;
-      left: 0;
+    width: 0;
+    left: 0;
   }
   50% {
-      width: 100%;
-      left: 0;
+    width: 100%;
+    left: 0;
   }
   100% {
-      width: 0;
-      left: 100%;
+    width: 0;
+    left: 100%;
   }
 }
 
 @keyframes move2 {
   0% {
-      width: 0;
-      left: 0;
+    width: 0;
+    left: 0;
   }
   50% {
-      width: 100%;
-      left: 0;
+    width: 100%;
+    left: 0;
   }
   100% {
-      width: 0;
-      left: 100%;
+    width: 0;
+    left: 100%;
   }
 }
 
 @-webkit-keyframes move3 {
   0% {
-      height: 100%;
-      top: 0;
+    height: 100%;
+    top: 0;
   }
   54% {
-      height: 0;
-      top: 100%;
+    height: 0;
+    top: 100%;
   }
   55% {
-      height: 0;
-      top: 0;
+    height: 0;
+    top: 0;
   }
   100% {
-      height: 100%;
-      top: 0;
+    height: 100%;
+    top: 0;
   }
 }
 
 @keyframes move3 {
   0% {
-      height: 100%;
-      top: 0;
+    height: 100%;
+    top: 0;
   }
   54% {
-      height: 0;
-      top: 100%;
+    height: 0;
+    top: 100%;
   }
   55% {
-      height: 0;
-      top: 0;
+    height: 0;
+    top: 0;
   }
   100% {
-      height: 100%;
-      top: 0;
+    height: 100%;
+    top: 0;
   }
 }
 
 @-webkit-keyframes move4 {
   0% {
-      width: 0;
-      right: 0;
+    width: 0;
+    right: 0;
   }
   55% {
-      width: 100%;
-      right: 0;
+    width: 100%;
+    right: 0;
   }
   100% {
-      width: 0;
-      right: 100%;
+    width: 0;
+    right: 100%;
   }
 }
 
 @keyframes move4 {
   0% {
-      width: 0;
-      right: 0;
+    width: 0;
+    right: 0;
   }
   55% {
-      width: 100%;
-      right: 0;
+    width: 100%;
+    right: 0;
   }
   100% {
-      width: 0;
-      right: 100%;
+    width: 0;
+    right: 100%;
   }
 }
-
 
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.99px) {}
 
-
 /* Small devices (landscape phones, less than 768px) */
 
 @media (max-width: 767.99px) {}
-
 
 /*  Medium devices (tablets, less than 992px) */
 
 @media (max-width: 991.99px) {}
 
-
 /* Large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.99px) {}
-
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
