@@ -84,85 +84,14 @@
 
             </div>
 
-            <div class="container">
-                <div class="gallery">
-                    <div v-for="(img, index) in collectionImg">
-                        <img :src="img" @click="modalView(img)" alt="project name" width="100%" height="auto" class="gallery-img" :id="'imgID' + (index + 1)"
-                        />
-                    </div>
-                </div>
-            </div>
-
-
-            <div v-if="isImgClicked">
-                <div>
-                    <img id="myImg" :src="imgPath" alt="">
-                    <div id="myModal" :style="modalStyle" class="modal">
-                        <span @click="closeModal" class="close">&times;</span>
-                        <img class="modal-content" :src="imgPath" id="imgId">
-                        <div id="caption"></div>
-                    </div>
-                </div>
-            </div>
-
-
+            <collection-display v-bind:collection='collectionImgs'></collection-display>
 
             <div class="push"></div>
         </div>
 
         <!-- footer starts here -->
+        <footer-component></footer-component>
 
-        <footer class="footer">
-            <div v-if="!phoneClick && !emailClick">
-                <div class="social-media-buttons">
-
-                    <div class="social-media-button facebook">
-                        <a href="#yourFBUrlGoesHere">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </a>
-                    </div>
-
-                    <div class="social-media-button instagram">
-                        <a href="#yourInstagramUrlGoesHere">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
-
-                    <div class="social-media-button envelope">
-
-                        <a v-on:click="emailPopulate" id="email">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                    </div>
-
-                    <div class="social-media-button phone">
-                        <div>
-                            <a v-on:click="phonePopulate">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div v-if="phoneClick">
-
-                <div class ="footerInfo" >{{phone}}</div>
-                        <button class="footerToggleBtn" @click="toggleButtons" type="button" class="btn btn-light">
-                            Toggle Back
-                        </button>
-
-            </div>
-
-            <div v-if="emailClick">
-
-                <div class ="footerInfo" >{{email}}</div>
-                        <button class="footerToggleBtn" @click="toggleButtons" type="button" class="btn btn-light">
-                            Toggle Back
-                        </button>
-
-            </div>
-        </footer>
 
 
     </div>
@@ -172,8 +101,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/about.js"></script>
+   
     <script src="https://unpkg.com/vue"></script>
     <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
