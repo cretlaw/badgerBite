@@ -1,6 +1,6 @@
 # badger-bite-website
 
-> A vue.js website
+> A Vue.js project
 
 ## Build Setup
 
