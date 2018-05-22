@@ -1,4 +1,4 @@
-# badger-bite-website
+# badger-byte-site
 
 > A Vue.js project
 
