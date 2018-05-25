@@ -1,8 +1,6 @@
-function init() {
 
     
-
-    Vue.component('footer-component', {
+Vue.component('footer-component', {
         template: ` <div>
     <footer class="footer">
         <div v-if="!phoneClick && !emailClick">
@@ -161,6 +159,5 @@ function init() {
         }
 
 
-    })
+})
 
-}
