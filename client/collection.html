@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/imageGallery.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <style>
         [v-cloak] {
@@ -32,38 +33,11 @@
 
 
     <!-- this is where navigation start -->
-    <div class="overlay-navigation">
-        <nav role="navigation">
-
-            <!-- the href path is where user is directed to when clicking and data-content is the text that shows when you hover over the link -->
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="collection.html">Collection</a>
-                </li>
-                <li>
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li>
-                    <a href="events.html">Events</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-
-    <!-- this creates the thre lines that are on right side AKA hamburger menu -->
-    <div class="open-overlay">
-        <span class="bar-top"></span>
-        <span class="bar-middle"></span>
-        <span class="bar-bottom"></span>
-    </div>
-
+    
 
     <!-- site content starts here all nested inside a wrapper tag -->
-    <div id="imgVue" v-cloak>
+    <div id="app" v-cloak>
+        <header-component></header-component>
         <div class="wrapper">
 
 
@@ -105,7 +79,7 @@
     <script src="https://unpkg.com/vue"></script>
     <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script src="js/collection.js"></script>
+    <script src="js/VueComponents.js"></script>
 
 
 

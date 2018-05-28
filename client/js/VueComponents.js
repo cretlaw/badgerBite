@@ -1,7 +1,64 @@
+   //NOTE:You need at least one vue instance to use Vue
+   new Vue({
+    el: '#app',
+    data: {
+        collectionImgs: [],
 
+    },
+    //getting All images in images/projects
+    beforeCreate() {
+        let vm = this
+
+        axios.get('http://localhost:8080/getProjectImgs')
+            .then(result => {
+                vm.collectionImgs = result.data.slice(0)
+                //TODO:REMMEBER TO DELETE THIS CONSOLE LOG
+                console.log(vm.collectionImgs)
+
+            })
+        
+            
+    }
+
+
+})
+
+//TODO: Tab is not aligning properly when nav is open
+Vue.component('header-component',{
+    template: `
+                    <div class="header" v-bind:class="{active:toggleActive}">
+                        <button v-on:click="showNav" class="toggle-nav">
+                            <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                        </button>
+                        <ul class="nav">
+                            <li class="loud"><a href="index.html">Home</a></li>
+                            <li class="loud"><a href="collection.html">Collection</a></li>
+                            <li class="loud"><a href="shop.html">Shop</a></li>
+                            <li class="loud"><a href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+
+                `,
+    data: function(){
+        return {
+            toggleActive:false
+        }
+    },
+
+    methods: {
+        showNav: function(){
+            this.toggleActive = !this.toggleActive
+            
+        }
+      
+    }
+
+
+
+})
     
 Vue.component('footer-component', {
-        template: ` <div>
+    template: ` <div>
     <footer class="footer">
         <div v-if="!phoneClick && !emailClick">
             <div class="social-media-buttons">
@@ -54,7 +111,7 @@ Vue.component('footer-component', {
         </div>
     </footer>
 
-</div>`,
+    </div>`,
 
         data: function () {
             return {
@@ -79,10 +136,9 @@ Vue.component('footer-component', {
                 this.emailClick = false
             }
         }
-    })
-
-
-    Vue.component('collection-display', {
+})
+//TODO:Images not aligning in the center when on phones
+Vue.component('collection-display', {
         template: `<div>
         <div class="container">
             <div class="gallery">
@@ -136,28 +192,6 @@ Vue.component('footer-component', {
 
 
 
-    })
-
-    new Vue({
-        el: '#imgVue',
-        data: {
-            collectionImgs: [],
-
-        },
-
-        beforeCreate() {
-            let vm = this
-
-            axios.get('http://localhost:8080/getProjectImgs')
-                .then(result => {
-                    vm.collectionImgs = result.data.slice(0)
-                    console.log(vm.collectionImgs)
-
-                })
-            
-                
-        }
-
-
 })
+ 
 
