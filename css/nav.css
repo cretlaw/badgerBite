@@ -1,0 +1,134 @@
+/* importing local fonts dowloaded from the internet */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+@font-face {
+  font-family: trench100;
+  src: url('trench100free.otf');
+}
+
+/* Style for header */
+
+header {
+    position: relative;
+    background-image: url("https://media.giphy.com/media/Ab6TWc53LF16/giphy.gif");
+    
+}
+
+header ul.nav {
+    overflow: hidden;
+}
+
+header ul.nav li {
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+header ul.nav li a {
+    display: block;
+    height: 0px;
+    opacity: 0;
+    font-family: trench100, sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 20vmin;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+}
+
+header ul.nav li a:hover {
+    color: #fff;
+    background-color: rgba(34, 32, 32, 0.4);
+}
+
+@media screen and (max-width: 600px) {
+    header ul.nav li {
+        float: none;
+        width: 100%;
+        
+    }
+    header ul.nav li a {
+        height: 0;
+        font-size: 1.5em;
+    }
+}
+
+/* Style for header with active class name */
+
+header.active ul.nav li a {
+    height: 20vmin;
+    opacity: 1;
+    line-height: 20vmin;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    header.active ul.nav li a {
+        height: 10vmin;
+        line-height: 10vmin;
+        /* border-bottom: 1px solid #222b2f; */
+    }
+}
+
+/* Style for the plus button */
+
+button.toggle-nav {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 35px;
+    background: whitesmoke; 
+    font: 400 1.2em 'Allan', serif;
+    color: rgb(33, 194, 178);
+    border: none;
+    line-height: 30px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+}
+
+button.toggle-nav:hover {
+    height: 50px;
+    
+}
+
+button.toggle-nav span {
+    display: block;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    
+}
+
+/* Style for the plus button when header has active classe name */
+
+header.active button.toggle-nav {
+    top: 20vmin;
+    background-color: whitesmoke;
+
+}
+
+header.active button.toggle-nav span {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    button.toggle-nav {
+        top: 0;
+    }
+   header.active button.toggle-nav {
+        top: 40vmin;
+    }
+}

@@ -11,8 +11,9 @@
     background-size: cover;
     background-blend-mode: screen;
     position: absolute;
-    top: 30vmin;
+    top: 40vmin;
     left: 50%;
+   
   }
   
   .first {
@@ -29,3 +30,27 @@
             transform: translateX(-35%) translateY(-50%);
     opacity: 0.8;
   }
+
+  @media screen and (max-width: 600px) {
+    .triangle {
+      -webkit-clip-path: url(#cp);
+      clip-path: url(#cp);
+      width: 40vmin;
+      height: 30vmin;
+      max-height: 60vmin;
+      max-width: 60vmin;
+      background-size: cover;
+      background-blend-mode: screen;
+      position: absolute;
+      top: 70vmin;
+      left: 50%;
+     
+    }
+    /* header ul.nav li {
+        float: none;
+        width: 100%;
+    }
+    header ul.nav li a {
+        height: 0;
+    } */
+}
