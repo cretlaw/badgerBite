@@ -9,7 +9,8 @@
 
 header {
     position: relative;
-    background-image: url("https://media.giphy.com/media/Ab6TWc53LF16/giphy.gif");
+    /* background-image: url("https://media.giphy.com/media/Ab6TWc53LF16/giphy.gif"); */
+    background-image: url('static.gif')
     
 }
 
@@ -20,7 +21,7 @@ header ul.nav {
 header ul.nav li {
     position: relative;
     float: left;
-    width: 25%;
+    width: 33.33%;
 }
 
 header ul.nav li a {
@@ -28,7 +29,7 @@ header ul.nav li a {
     height: 0px;
     opacity: 0;
     font-family: trench100, sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 900;
     line-height: 20vmin;
     color: white;
@@ -53,7 +54,7 @@ header ul.nav li a:hover {
     }
     header ul.nav li a {
         height: 0;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
@@ -129,6 +130,6 @@ header.active button.toggle-nav span {
         top: 0;
     }
    header.active button.toggle-nav {
-        top: 40vmin;
+        top: 30vmin;
     }
 }
