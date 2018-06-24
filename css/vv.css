@@ -1,6 +1,33 @@
+.triangle {
+  -webkit-clip-path: url(#cp);
+  clip-path: url(#cp);
+  width: 40vmin;
+  height: 30vmin;
+  max-height: 60vmin;
+  max-width: 60vmin;
+  background-size: cover;
+  background-blend-mode: screen;
+  position: absolute;
+  top: 40vmin;
+  left: 50%;
+}
 
+.first {
+  background-color: #C5075C;
+  background-image: url("https://media.giphy.com/media/U9T62ec4XrIVG/giphy.gif");
+  -webkit-transform: translateX(-65%) translateY(-50%);
+  transform: translateX(-65%) translateY(-50%);
+}
 
-  
+.second {
+  background-color: #03B897;
+  background-image: url("https://media.giphy.com/media/3o72F7ryUWTBwljkWI/giphy.gif");
+  -webkit-transform: translateX(-35%) translateY(-50%);
+  transform: translateX(-35%) translateY(-50%);
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1439px){
   .triangle {
     -webkit-clip-path: url(#cp);
     clip-path: url(#cp);
@@ -11,46 +38,23 @@
     background-size: cover;
     background-blend-mode: screen;
     position: absolute;
-    top: 40vmin;
+    top: 35vmax;
     left: 50%;
-   
   }
-  
-  .first {
-    background-color: #C5075C;
-    background-image: url("https://media.giphy.com/media/U9T62ec4XrIVG/giphy.gif");
-    -webkit-transform: translateX(-65%) translateY(-50%);
-            transform: translateX(-65%) translateY(-50%);
-  }
-  
-  .second {
-    background-color: #03B897;
-    background-image: url("https://media.giphy.com/media/3o72F7ryUWTBwljkWI/giphy.gif");
-    -webkit-transform: translateX(-35%) translateY(-50%);
-            transform: translateX(-35%) translateY(-50%);
-    opacity: 0.8;
-  }
+}
 
-  @media screen and (max-width: 600px) {
-    .triangle {
-      -webkit-clip-path: url(#cp);
-      clip-path: url(#cp);
-      width: 40vmin;
-      height: 30vmin;
-      max-height: 60vmin;
-      max-width: 60vmin;
-      background-size: cover;
-      background-blend-mode: screen;
-      position: absolute;
-      top: 60vmin;
-      left: 50%;
-     
-    }
-    /* header ul.nav li {
-        float: none;
-        width: 100%;
-    }
-    header ul.nav li a {
-        height: 0;
-    } */
+@media screen and (min-width: 800px){
+  .triangle {
+    -webkit-clip-path: url(#cp);
+    clip-path: url(#cp);
+    width: 40vmin;
+    height: 30vmin;
+    max-height: 60vmin;
+    max-width: 60vmin;
+    background-size: cover;
+    background-blend-mode: screen;
+    position: absolute;
+    top: 22vmax;
+    left: 50%;
+  }
 }

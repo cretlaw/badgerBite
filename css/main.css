@@ -115,7 +115,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .site-content {
-    padding-top: 70vmin;
+    padding-top: 90vmin;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
