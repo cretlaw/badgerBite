@@ -15,9 +15,11 @@
 
     <!-- personal css stylesheets -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/vv.css">
     <link rel="stylesheet" href="css/indexSlider.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css"?
+   
 
 
 </head>
@@ -26,25 +28,36 @@
 
 
     <!-- this is where navigation start -->
-    <!-- this is where navigation start -->
-    <header>
-        <button class="toggle-nav">
-            <span>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-            </span>
-        </button>
-        <ul class="nav">
-            <li class="loud">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="loud">
-                <a href="collection.html">Collection</a>
-            </li>
-            <li class="loud">
-                <a href="events.html">Events</a>
-            </li>
-        </ul>
-    </header>
+    <div class="overlay-navigation">
+        <nav role="navigation">
+
+            <!-- the href path is where user is directed to when clicking -->
+            <!-- if you want to add an additional page and added to the navigation bar you 
+            can added here by wrapping it in the li tags similar to the other 3 that are
+            already here but you need to make some additional changes in nav.css. There
+            will be instructions there on how to do it -->            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+                
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- this creates the thre lines that are on right side AKA hamburger menu -->
+    <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+    </div>
+
 
 
     <!-- site content starts here all nested inside a wrapper tag -->
@@ -148,18 +161,23 @@
 
                         <!-- your picure goes here replace what's inside the quotations src with the path to
                             your pic (note your picture dimensions must be squared for example 400X400) -->
-                        <img class="avatar" src="images/aboutPic.jpeg" />
+                        <img class="avatar" src="images/about/aboutPic.jpeg" />
+                        <!-- Name of the artist goes below -->
                         <div class="picName">Vanessa Vargas</div>
-                        <!-- <div class="position">Designer & Developer</div> -->
+                        <!-- You can link to facebook icon to your facebook by replacing your fb link 
+                        instead of #yourPersonalFBHere -->
                         <div class="social">
                             <a href="#yourPersonalFBHere">
                                 <i class="fa fa-facebook-square"></i>
                             </a>
-
+                            <!-- You can link to instagram icon to your instagram by replacing your instagram link 
+                        instead of #yourPersonalInstagramHere -->
                             <a href="#yourPersonalInstagramHere">
                                 <i class="fa fa-instagram"></i>
                             </a>
-                            <a href="mailto:wcarbajal84@gmail.com">
+                            <!-- You can link to email icon to your email by replacing your email address
+                        instead of someemail@gmail.com -->
+                            <a href="mailto:someemail@gmail.com">
                                 <i class="fa fa-envelope"></i>
                             </a>
                         </div>
@@ -167,7 +185,9 @@
                     <div class="overlay"></div>
                 </div>
                 <div class="portfolio">
+                    <!-- Opening tile for the about the aritsit card goes below -->
                     <div class="aboutHeadline">About The Artist</div>
+                    <!-- Bio or info about the artist goes below -->
                     <div class="aboutContent">
                         <p> A self-taught analog collage and mixed media artist explores her aesthetic with the use of color,
                             texture, and a deep curiosity of various surfaces as a canvas for her pieces. She blends precise
@@ -176,6 +196,8 @@
                             or appropriated objects enhance and create a sense of fluid movement and energy throughout her
                             artwork.</p>
                     </div>
+
+                    <!-- This is the button that links "View Collection" to the collection page -->
                     <div class='btn-cont'>
                         <a class='btn' href='collection.html'>
                             View Collection
@@ -194,37 +216,40 @@
     </div>
 
     <!-- footer starts here -->
-
     <footer class="footer">
 
-        <div class="social-media-buttons">
-
-
-            <div class="social-media-button facebook">
-                <a href="#yourFBUrlGoesHere">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                </a>
+            <div class="social-media-buttons">
+    
+                <!-- You can put a link to your facebook where it says #yourFBUrlGoesHere -->
+                <div class="social-media-button facebook">
+                    <a href="#yourFBUrlGoesHere">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- You can put a link to your facebook where it says #yourInstagramUrlGoesHere -->
+                <div class="social-media-button instagram">
+                    <a href="#yourInstagramUrlGoesHere">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+    
+                <!-- To change the email shown when phone email click go to folder named js and find 
+                    the file named footer instructions will be provided there -->
+                <div class="social-media-button envelope">
+                    <a onClick="emailPopulate()" id="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+    
+                <!-- To change the phone number shown when phone icon click go to folder named js and find 
+                    the file named footer instructions will be provided there -->
+                <div class="social-media-button phone">
+                    <a onClick="phonePopulate()">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-
-            <div class="social-media-button instagram">
-                <a href="#yourInstagramUrlGoesHere">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <div class="social-media-button envelope">
-                <a onClick="emailPopulate()" id="email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <div class="social-media-button phone">
-                <a onClick="phonePopulate()">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
 

@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
 
@@ -27,25 +28,36 @@
 
 
     <!-- this is where navigation start -->
-    <!-- this is where navigation start -->
-    <header>
-        <button class="toggle-nav">
-            <span>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-            </span>
-        </button>
-        <ul class="nav">
-            <li class="loud">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="loud">
-                <a href="collection.html">Collection</a>
-            </li>
-            <li class="loud">
-                <a href="events.html">Events</a>
-            </li>
-        </ul>
-    </header>
+    <div class="overlay-navigation">
+        <nav role="navigation">
+
+            <!-- the href path is where user is directed to when clicking -->
+            <!-- if you want to add an additional page and added to the navigation bar you 
+            can added here by wrapping it in the li tags similar to the other 3 that are
+            already here but you need to make some additional changes in nav.css. There
+            will be instructions there on how to do it -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- this creates the thre lines that are on right side AKA hamburger menu -->
+    <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+    </div>
 
 
     <!-- site content starts here all nested inside a wrapper tag -->
@@ -56,424 +68,428 @@
             between the p tags -->
 
         <div class="site-content" style="padding-top:15vmin ">
-            
 
-                        <div class="headline">
-                            <p>Events</p>
-                        </div>
-                    
+
+            <div class="headline">
+                <p>Events</p>
             </div>
 
-            <div class="container">
-                <!--ROW-->
-                <div class="row">
+        </div>
+        <!--Note 3 events can go between the tags with the class="container"-->
+        <div class="container">
 
-                    <!--İTEM-->
-                    <div class="col-4-grid">
-                        <div class="item">
-                            <div class="front-end">
-                                <img src="images/events/event1/cover.jpg" alt="" />
+            <div class="row">
+
+                <!--First event-->
+                <div class="col-4-grid">
+                    <div class="item">
+                        <div class="front-end">
+                            <!-- A flyer of events goes here the file should be in images/events folder then you can 
+                                change the path below and add description -->
+                            <img src="images/events/event1/cover.jpg" alt="Description of image goes here" />
+                        </div>
+
+                        <!-- the content when the user clicks the flyer starts here -->
+                        <div class="back-end">
+                            <div class="item-image">
+                                <!-- a picture of the event if it already passed or any other picture can go here 
+                                        or you remove it if you don't want to add an image note that you can add or remove 
+                                        images for any event between the tags with the class= "back end" -->
+                                <img src="images/events/event1/1.jpg" alt="" />
                             </div>
-                            <div class="back-end">
-                                <div class="item-image">
-                                    <img src="images/events/event1/1.jpg" alt="" />
-                                </div>
-                                <div class="item-title">Title 1</div>
-                                <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
-                                    Frederick Cuvier, brother to the
-                                    <b>famous Baron. In 1836, he published a Natural History of Whales,</b> in which he gives
-                                    what he calls a picture of the Sperm Whale. Before showing that picture to any Nantucketer,
-                                    you had best provide for your summary retreat from Nantucket. In a word, Frederick Cuvier's
-                                    Sperm Whale is not a Sperm Whale, but a squash. Of course, he never had the benefit of
-                                    a whaling voyage (such men seldom have), but whence he derived that picture, who can
-                                    tell? Perhaps he got it as his scientific predecessor in the same field, Desmarest, got
-                                    one of his authentic abortions; that is, from a Chinese drawing. And what sort of lively
-                                    lads with the pencil those Chinese are, many queer cups and saucers inform us.</p>
-                                <div class="item-image">
-                                    <img src="images/events/event1/2.jpg" alt="" />
-                                </div>
-                                <p>As for the sign-painters' whales seen in the streets hanging over the shops of oil-dealers,
-                                    what shall be said of them? They are generally Richard III. whales, with dromedary humps,
-                                    and very savage; breakfasting on three or four sailor tarts, that is whaleboats full
-                                    of mariners: their deformities floundering in seas of blood and blue paint.</p>
 
-                                <p>But these manifold mistakes in depicting the whale are not so very surprising after all.
-                                    Consider! Most of the scientific drawings have been taken from the stranded fish; and
-                                    these are about as correct as a drawing of a wrecked ship, with broken
-                                    <b>back, would correctly represent the noble animal itself</b> in all its undashed pride
-                                    of hull and spars. Though elephants have stood for their full-lengths, the living Leviathan
-                                    has never yet fairly floated himself for his portrait. The living whale, in his full
-                                    majesty and significance, is only to be seen at sea in unfathomable waters; and afloat
-                                    the vast bulk of him is out of sight, like a launched line-of-battle ship; and out of
-                                    that element it is a thing eternally impossible for mortal man to hoist him bodily into
-                                    the air, so as to preserve all his mighty swells and undulations. And, not to speak of
-                                    the highly presumable difference of contour between a young sucking whale and a full-grown
-                                    Platonian Leviathan; yet, even in the case of one of those young sucking whales hoisted
-                                    to a ship's deck, such is then the outlandish, eel-like, limbered, varying shape of him,
-                                    that his precise expression the devil himself could not catch.</p>
-
-                                <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints
-                                    may be derived touching his true form. Not at all. For it is one of the more curious
-                                    things about this Leviathan, that his skeleton gives very little idea of his general
-                                    shape. Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of
-                                    one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman,
-                                    with all Jeremy's other leading personal characteristics; yet nothing of this kind could
-                                    be inferred from any leviathan's articulated bones. In fact, as the great Hunter says,
-                                    the mere skeleton of the whale bears the same relation to the fully invested and padded
-                                    animal as the insect does to the chrysalis that so roundingly envelopes it. This peculiarity
-                                    is strikingly evinced in the head, as in some part of this book will be incidentally
-                                    shown. It is also very curiously displayed in the side fin, the bones of which almost
-                                    exactly answer to the bones of the human hand, minus only the thumb. This fin has four
-                                    regular bone-fingers, the index, middle, ring, and little finger. But all these are permanently
-                                    lodged in their fleshy covering, as the human fingers in an artificial covering. "However
-                                    recklessly the whale may sometimes serve us," said humorous Stubb one day, "he can never
-                                    be truly said to handle us without mittens."</p>
-
-                                <p>For all these reasons, then, any way you may look at it, you must needs conclude that the
-                                    great Leviathan is that one creature in the world which must remain unpainted to the
-                                    last. True, one portrait may hit the mark much nearer than another, but none can hit
-                                    it with any very considerable degree of exactness. So there is no earthly way of finding
-                                    out precisely what the whale really looks like. And the only mode in which you can derive
-                                    even a tolerable idea of his living contour, is by going a whaling yourself; but by so
-                                    doing, you run no small risk of being eternally stove and sunk by him. Wherefore, it
-                                    seems to me you had best not be too fastidious in your curiosity touching this Leviathan.</p>
+                            <!-- Title and any other important information of the event goes here -->
+                            <div class="item-title">Title 1</div>
+                            <!-- Additional information can go here such as reviews from people about the event 
+                                or magazines articles etc. -->
+                            <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
+                                Frederick Cuvier, brother to the
+                                <b>famous Baron. In 1836, he published a Natural History of Whales,</b> in which he gives what
+                                he calls a picture of the Sperm Whale. Before showing that picture to any Nantucketer, you
+                                had best provide for your summary retreat from Nantucket. In a word, Frederick Cuvier's Sperm
+                                Whale is not a Sperm Whale, but a squash. Of course, he never had the benefit of a whaling
+                                voyage (such men seldom have), but whence he derived that picture, who can tell? Perhaps
+                                he got it as his scientific predecessor in the same field, Desmarest, got one of his authentic
+                                abortions; that is, from a Chinese drawing. And what sort of lively lads with the pencil
+                                those Chinese are, many queer cups and saucers inform us.</p>
+                            <div class="item-image">
+                                <img src="images/events/event1/2.jpg" alt="" />
                             </div>
+                            <p>As for the sign-painters' whales seen in the streets hanging over the shops of oil-dealers, what
+                                shall be said of them? They are generally Richard III. whales, with dromedary humps, and
+                                very savage; breakfasting on three or four sailor tarts, that is whaleboats full of mariners:
+                                their deformities floundering in seas of blood and blue paint.</p>
+
+                            <p>But these manifold mistakes in depicting the whale are not so very surprising after all. Consider!
+                                Most of the scientific drawings have been taken from the stranded fish; and these are about
+                                as correct as a drawing of a wrecked ship, with broken
+                                <b>back, would correctly represent the noble animal itself</b> in all its undashed pride of
+                                hull and spars. Though elephants have stood for their full-lengths, the living Leviathan
+                                has never yet fairly floated himself for his portrait. The living whale, in his full majesty
+                                and significance, is only to be seen at sea in unfathomable waters; and afloat the vast bulk
+                                of him is out of sight, like a launched line-of-battle ship; and out of that element it is
+                                a thing eternally impossible for mortal man to hoist him bodily into the air, so as to preserve
+                                all his mighty swells and undulations. And, not to speak of the highly presumable difference
+                                of contour between a young sucking whale and a full-grown Platonian Leviathan; yet, even
+                                in the case of one of those young sucking whales hoisted to a ship's deck, such is then the
+                                outlandish, eel-like, limbered, varying shape of him, that his precise expression the devil
+                                himself could not catch.</p>
+
+                            <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints may
+                                be derived touching his true form. Not at all. For it is one of the more curious things about
+                                this Leviathan, that his skeleton gives very little idea of his general shape. Though Jeremy
+                                Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly
+                                conveys the idea of a burly-browed utilitarian old gentleman, with all Jeremy's other leading
+                                personal characteristics; yet nothing of this kind could be inferred from any leviathan's
+                                articulated bones. In fact, as the great Hunter says, the mere skeleton of the whale bears
+                                the same relation to the fully invested and padded animal as the insect does to the chrysalis
+                                that so roundingly envelopes it. This peculiarity is strikingly evinced in the head, as in
+                                some part of this book will be incidentally shown. It is also very curiously displayed in
+                                the side fin, the bones of which almost exactly answer to the bones of the human hand, minus
+                                only the thumb. This fin has four regular bone-fingers, the index, middle, ring, and little
+                                finger. But all these are permanently lodged in their fleshy covering, as the human fingers
+                                in an artificial covering. "However recklessly the whale may sometimes serve us," said humorous
+                                Stubb one day, "he can never be truly said to handle us without mittens."</p>
+
+                            <p>For all these reasons, then, any way you may look at it, you must needs conclude that the great
+                                Leviathan is that one creature in the world which must remain unpainted to the last. True,
+                                one portrait may hit the mark much nearer than another, but none can hit it with any very
+                                considerable degree of exactness. So there is no earthly way of finding out precisely what
+                                the whale really looks like. And the only mode in which you can derive even a tolerable idea
+                                of his living contour, is by going a whaling yourself; but by so doing, you run no small
+                                risk of being eternally stove and sunk by him. Wherefore, it seems to me you had best not
+                                be too fastidious in your curiosity touching this Leviathan.</p>
                         </div>
                     </div>
-                    <!--#İTEM-->
-                    <!--İTEM-->
-                    <div class="col-4-grid">
-                        <div class="item">
-                            <div class="front-end">
-                                <img src="images/events/event2/cover.png" alt="" />
-                            </div>
-                            <div class="back-end">
-                                <div class="item-image">
-                                    <img src="images/events/event2/1.jpg" alt="" />
-                                </div>
-                                <div class="item-title">Title 2</div>
-                                <p>As for the sign-painters'
-                                    <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
-                                    of them? They are generally Richard III. whales, with dromedary humps, and very savage;
-                                    breakfasting on three or four sailor tarts, that is whaleboats full of mariners: their
-                                    deformities floundering in seas of blood and blue paint.</p>
-
-                                <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
-                                    Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History
-                                    of Whales, in which he gives what he calls a picture of the Sperm Whale.
-                                    <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
-                                    retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale,
-                                    but a squash. Of course, he never had the benefit of a whaling voyage (such men seldom
-                                    have), but whence he derived that picture, who can tell? Perhaps he got it as his scientific
-                                    predecessor in the same field, Desmarest, got one of his authentic abortions; that is,
-                                    from a Chinese drawing. And what sort of lively lads with the pencil those Chinese are,
-                                    many queer cups and saucers inform us.</p>
-
-                                <div class="item-image">
-                                    <img src="images/events/event2/2.jpg" alt="" />
-                                </div>
-
-                                <p>But these manifold mistakes in depicting the whale are not so very surprising after all.
-                                    Consider! Most of the scientific drawings have been taken from the stranded fish; and
-                                    these are about as correct as a drawing of a wrecked ship, with broken back, would correctly
-                                    represent the noble animal itself in all its undashed pride of hull and spars. Though
-                                    elephants have stood for their full-lengths, the living Leviathan has never yet fairly
-                                    floated himself for his portrait. The living whale, in his full majesty and significance,
-                                    is only to be seen at sea in unfathomable waters; and afloat the vast bulk of him is
-                                    out of sight, like a launched line-of-battle ship; and out of that element it is a thing
-                                    eternally impossible for mortal man to hoist him bodily into the air, so as to preserve
-                                    all his mighty swells and undulations. And, not to speak of the highly presumable difference
-                                    of contour between a young sucking whale and a full-grown Platonian Leviathan; yet, even
-                                    in the case of one of those young sucking whales hoisted to a ship's deck, such is then
-                                    the outlandish, eel-like, limbered, varying shape of him, that his precise expression
-                                    the devil himself could not catch.</p>
-
-                                <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints
-                                    may be derived touching his true form. Not at all. For it is one of the more curious
-                                    things about this Leviathan, that his skeleton gives very little idea of his general
-                                    shape. Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of
-                                    one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman,
-                                    with all Jeremy's other leading personal characteristics; yet nothing of this kind could
-                                    be inferred from any leviathan's articulated bones. In fact, as the great Hunter says,
-                                    the mere skeleton of the whale bears the same relation to the fully invested and padded
-                                    animal as the insect does to the chrysalis that so roundingly envelopes it. This peculiarity
-                                    is strikingly evinced in the head, as in some part of this book will be incidentally
-                                    shown. It is also very curiously displayed in the side fin, the bones of which almost
-                                    exactly answer to the bones of the human hand, minus only the thumb. This fin has four
-                                    regular bone-fingers, the index, middle, ring, and little finger. But all these are permanently
-                                    lodged in their fleshy covering, as the human fingers in an artificial covering. "However
-                                    recklessly the whale may sometimes serve us," said humorous Stubb one day, "he can never
-                                    be truly said to handle us without mittens."</p>
-
-                                <p>For all these reasons, then, any way you may look at it, you must needs conclude that the
-                                    great Leviathan is that one creature in the world which must remain unpainted to the
-                                    last. True, one portrait may hit the mark much nearer than another, but none can hit
-                                    it with any very considerable degree of exactness. So there is no earthly way of finding
-                                    out precisely what the whale really looks like. And the only mode in which you can derive
-                                    even a tolerable idea of his living contour, is by going a whaling yourself; but by so
-                                    doing, you run no small risk of being eternally stove and sunk by him. Wherefore, it
-                                    seems to me you had best not be too fastidious in your curiosity touching this Leviathan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--#İTEM-->
-                    <!--İTEM-->
-                    <div class="col-4-grid">
-                        <div class="item">
-                            <div class="front-end">
-                                <img src="images/events/event3/cover.jpg" alt="" />
-                            </div>
-                            <div class="back-end">
-                                <div class="item-image">
-                                    <img src="images/events/event3/1.jpg" alt="" />
-                                </div>
-                                <div class="item-title"> Title 3</div>
-
-                                <p>But these manifold mistakes in depicting
-                                    <b>the whale are not so very surprising after all.</b> Consider! Most of the scientific
-                                    drawings have been taken from the stranded fish; and these are about as correct as a
-                                    drawing of a wrecked ship, with broken back, would correctly represent the noble animal
-                                    itself in all its undashed pride of hull and spars. Though elephants have stood for their
-                                    full-lengths, the living Leviathan has never yet fairly floated himself for his portrait.
-                                    The living whale, in his full majesty and significance, is only to be seen at sea in
-                                    unfathomable waters; and afloat the vast
-                                    <b>bulk of him is out of sight, like a launched</b> line-of-battle ship; and out of that
-                                    element it is a thing eternally impossible for mortal man to hoist him bodily into the
-                                    air, so as to preserve all his mighty swells and undulations. And, not to speak of the
-                                    highly presumable difference of contour between a young sucking whale and a full-grown
-                                    Platonian Leviathan; yet, even in the case of one of those young sucking whales hoisted
-                                    to a ship's deck, such is then the outlandish, eel-like, limbered, varying shape of him,
-                                    that his precise expression the devil himself could not catch.
-                                </p>
-
-
-                                <div class="item-image">
-                                    <img src="images/events/event3/2.jpg" alt="" />
-                                </div>
-
-                                <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
-                                    Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History
-                                    of Whales, in which he gives what he calls a picture of the Sperm Whale. Before showing
-                                    that picture to any Nantucketer, you had best provide for your summary retreat from Nantucket.
-                                    In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but a squash. Of course,
-                                    he never had the benefit of a whaling voyage (such men seldom have), but whence he derived
-                                    that picture, who can tell? Perhaps he got it as his scientific predecessor in the same
-                                    field, Desmarest, got one of his authentic abortions; that is, from a Chinese drawing.
-                                    And what sort of lively lads with the pencil those Chinese are, many queer cups and saucers
-                                    inform us.
-                                </p>
-
-                                <p>As for the sign-painters' whales seen in the streets hanging over the shops of oil-dealers,
-                                    what shall be said of them? They are generally Richard III. whales, with dromedary humps,
-                                    and very savage; breakfasting on three or four sailor tarts, that is whaleboats full
-                                    of mariners: their deformities floundering in seas of blood and blue paint.</p>
-
-                                <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints
-                                    may be derived touching his true form. Not at all. For it is one of the more curious
-                                    things about this Leviathan, that his skeleton gives very little idea of his general
-                                    shape. Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of
-                                    one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman,
-                                    with all Jeremy's other leading personal characteristics; yet nothing of this kind could
-                                    be inferred from any leviathan's articulated bones. In fact, as the great Hunter says,
-                                    the mere skeleton of the whale bears the same relation to the fully invested and padded
-                                    animal as the insect does to the chrysalis that so roundingly envelopes it. This peculiarity
-                                    is strikingly evinced in the head, as in some part of this book will be incidentally
-                                    shown. It is also very curiously displayed in the side fin, the bones of which almost
-                                    exactly answer to the bones of the human hand, minus only the thumb. This fin has four
-                                    regular bone-fingers, the index, middle, ring, and little finger. But all these are permanently
-                                    lodged in their fleshy covering, as the human fingers in an artificial covering. "However
-                                    recklessly the whale may sometimes serve us," said humorous Stubb one day, "he can never
-                                    be truly said to handle us without mittens."</p>
-
-                                <p>For all these reasons, then, any way you may look at it, you must needs conclude that the
-                                    great Leviathan is that one creature in the world which must remain unpainted to the
-                                    last. True, one portrait may hit the mark much nearer than another, but none can hit
-                                    it with any very considerable degree of exactness. So there is no earthly way of finding
-                                    out precisely what the whale really looks like. And the only mode in which you can derive
-                                    even a tolerable idea of his living contour, is by going a whaling yourself; but by so
-                                    doing, you run no small risk of being eternally stove and sunk by him. Wherefore, it
-                                    seems to me you had best not be too fastidious in your curiosity touching this Leviathan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--#İTEM-->
                 </div>
-                <!--#ROW-->
-            </div>
-            <!--#CONTAINER-->
-            <!-- note there should be 3 col-4-grid per each row -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-4-grid">
-                        <div class="item">
-                            <div class="front-end">
-                                <div class="item-title">Need Blog Title </div>
-                                <img src="images/inspirations/ocult1.jpg" alt="" />
+                <!--Event 1 ends-->
+                <!--Event 2 begins follows same format as before-->
+                <div class="col-4-grid">
+                    <div class="item">
+                        <div class="front-end">
+                            <img src="images/events/event2/cover.png" alt="" />
+                        </div>
+                        <div class="back-end">
+                            <div class="item-image">
+                                <img src="images/events/event2/1.jpg" alt="" />
                             </div>
-                            <div class="back-end">
-                                <div class="item-image">
-                                    <img src="images/inspirations/ocult1.jpg" alt="" />
-                                </div>
-                                <div class="item-title">Need Blog Title 2</div>
-                                <p>As for the sign-painters'
-                                    <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
-                                    of them? They are generally Richard III. whales, with dromedary humps, and very savage;
-                                    breakfasting on three or four sailor tarts, that is whaleboats full of mariners: their
-                                    deformities floundering in seas of blood and blue paint.</p>
+                            <div class="item-title">Title 2</div>
+                            <p>As for the sign-painters'
+                                <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
+                                of them? They are generally Richard III. whales, with dromedary humps, and very savage; breakfasting
+                                on three or four sailor tarts, that is whaleboats full of mariners: their deformities floundering
+                                in seas of blood and blue paint.</p>
 
-                                <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
-                                    Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History
-                                    of Whales, in which he gives what he calls a picture of the Sperm Whale.
-                                    <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
-                                    retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale,
-                                    but a squash. Of course, he never had the benefit of a whaling voyage (such men seldom
-                                    have), but whence he derived that picture, who can tell? Perhaps he got it as his scientific
-                                    predecessor in the same field, Desmarest, got one of his authentic abortions; that is,
-                                    from a Chinese drawing. And what sort of lively lads with the pencil those Chinese are,
-                                    many queer cups and saucers inform us.</p>
+                            <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
+                                Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History of
+                                Whales, in which he gives what he calls a picture of the Sperm Whale.
+                                <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
+                                retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but
+                                a squash. Of course, he never had the benefit of a whaling voyage (such men seldom have),
+                                but whence he derived that picture, who can tell? Perhaps he got it as his scientific predecessor
+                                in the same field, Desmarest, got one of his authentic abortions; that is, from a Chinese
+                                drawing. And what sort of lively lads with the pencil those Chinese are, many queer cups
+                                and saucers inform us.</p>
 
-                                <div class="item-image">
-                                    <img src="images/inspirations/ocult2.jpg" alt="" />
-                                </div>
-
-                                <p>But these manifold mistakes in depicting the whale are not so very surprising after all.
-                                    Consider! Most of the scientific drawings have been taken from the stranded fish; and
-                                    these are about as correct as a drawing of a wrecked ship, with broken back, would correctly
-                                    represent the noble animal itself in all its undashed pride of hull and spars. Though
-                                    elephants have stood for their full-lengths, the living Leviathan has never yet fairly
-                                    floated himself for his portrait. The living whale, in his full majesty and significance,
-                                    is only to be seen at sea in unfathomable waters; and afloat the vast bulk of him is
-                                    out of sight, like a launched line-of-battle ship; and out of that element it is a thing
-                                    eternally impossible for mortal man to hoist him bodily into the air, so as to preserve
-                                    all his mighty swells and undulations. And, not to speak of the highly presumable difference
-                                    of contour between a young sucking whale and a full-grown Platonian Leviathan; yet, even
-                                    in the case of one of those young sucking whales hoisted to a ship's deck, such is then
-                                    the outlandish, eel-like, limbered, varying shape of him, that his precise expression
-                                    the devil himself could not catch.</p>
-
-                                <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints
-                                    may be derived touching his true form. Not at all. For it is one of the more curious
-                                    things about this Leviathan, that his skeleton gives very little idea of his general
-                                    shape. Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of
-                                    one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman,
-                                    with all Jeremy's other leading personal characteristics; yet nothing of this kind could
-                                    be inferred from any leviathan's articulated bones. In fact, as the great Hunter says,
-                                    the mere skeleton of the whale bears the same relation to the fully invested and padded
-                                    animal as the insect does to the chrysalis that so roundingly envelopes it. This peculiarity
-                                    is strikingly evinced in the head, as in some part of this book will be incidentally
-                                    shown. It is also very curiously displayed in the side fin, the bones of which almost
-                                    exactly answer to the bones of the human hand, minus only the thumb. This fin has four
-                                    regular bone-fingers, the index, middle, ring, and little finger. But all these are permanently
-                                    lodged in their fleshy covering, as the human fingers in an artificial covering. "However
-                                    recklessly the whale may sometimes serve us," said humorous Stubb one day, "he can never
-                                    be truly said to handle us without mittens."</p>
-
-                                <p>For all these reasons, then, any way you may look at it, you must needs conclude that the
-                                    great Leviathan is that one creature in the world which must remain unpainted to the
-                                    last. True, one portrait may hit the mark much nearer than another, but none can hit
-                                    it with any very considerable degree of exactness. So there is no earthly way of finding
-                                    out precisely what the whale really looks like. And the only mode in which you can derive
-                                    even a tolerable idea of his living contour, is by going a whaling yourself; but by so
-                                    doing, you run no small risk of being eternally stove and sunk by him. Wherefore, it
-                                    seems to me you had best not be too fastidious in your curiosity touching this Leviathan.</p>
+                            <div class="item-image">
+                                <img src="images/events/event2/2.jpg" alt="" />
                             </div>
+
+                            <p>But these manifold mistakes in depicting the whale are not so very surprising after all. Consider!
+                                Most of the scientific drawings have been taken from the stranded fish; and these are about
+                                as correct as a drawing of a wrecked ship, with broken back, would correctly represent the
+                                noble animal itself in all its undashed pride of hull and spars. Though elephants have stood
+                                for their full-lengths, the living Leviathan has never yet fairly floated himself for his
+                                portrait. The living whale, in his full majesty and significance, is only to be seen at sea
+                                in unfathomable waters; and afloat the vast bulk of him is out of sight, like a launched
+                                line-of-battle ship; and out of that element it is a thing eternally impossible for mortal
+                                man to hoist him bodily into the air, so as to preserve all his mighty swells and undulations.
+                                And, not to speak of the highly presumable difference of contour between a young sucking
+                                whale and a full-grown Platonian Leviathan; yet, even in the case of one of those young sucking
+                                whales hoisted to a ship's deck, such is then the outlandish, eel-like, limbered, varying
+                                shape of him, that his precise expression the devil himself could not catch.</p>
+
+                            <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints may
+                                be derived touching his true form. Not at all. For it is one of the more curious things about
+                                this Leviathan, that his skeleton gives very little idea of his general shape. Though Jeremy
+                                Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly
+                                conveys the idea of a burly-browed utilitarian old gentleman, with all Jeremy's other leading
+                                personal characteristics; yet nothing of this kind could be inferred from any leviathan's
+                                articulated bones. In fact, as the great Hunter says, the mere skeleton of the whale bears
+                                the same relation to the fully invested and padded animal as the insect does to the chrysalis
+                                that so roundingly envelopes it. This peculiarity is strikingly evinced in the head, as in
+                                some part of this book will be incidentally shown. It is also very curiously displayed in
+                                the side fin, the bones of which almost exactly answer to the bones of the human hand, minus
+                                only the thumb. This fin has four regular bone-fingers, the index, middle, ring, and little
+                                finger. But all these are permanently lodged in their fleshy covering, as the human fingers
+                                in an artificial covering. "However recklessly the whale may sometimes serve us," said humorous
+                                Stubb one day, "he can never be truly said to handle us without mittens."</p>
+
+                            <p>For all these reasons, then, any way you may look at it, you must needs conclude that the great
+                                Leviathan is that one creature in the world which must remain unpainted to the last. True,
+                                one portrait may hit the mark much nearer than another, but none can hit it with any very
+                                considerable degree of exactness. So there is no earthly way of finding out precisely what
+                                the whale really looks like. And the only mode in which you can derive even a tolerable idea
+                                of his living contour, is by going a whaling yourself; but by so doing, you run no small
+                                risk of being eternally stove and sunk by him. Wherefore, it seems to me you had best not
+                                be too fastidious in your curiosity touching this Leviathan.</p>
                         </div>
                     </div>
+                </div>
+                <!--Event 2 ends-->
+                <!--Event 3 begins follows same format as before-->
+                <div class="col-4-grid">
+                    <div class="item">
+                        <div class="front-end">
+                            <img src="images/events/event3/cover.jpg" alt="" />
+                        </div>
+                        <div class="back-end">
+                            <div class="item-image">
+                                <img src="images/events/event3/1.jpg" alt="" />
+                            </div>
+                            <div class="item-title"> Title 3</div>
+
+                            <p>But these manifold mistakes in depicting
+                                <b>the whale are not so very surprising after all.</b> Consider! Most of the scientific drawings
+                                have been taken from the stranded fish; and these are about as correct as a drawing of a
+                                wrecked ship, with broken back, would correctly represent the noble animal itself in all
+                                its undashed pride of hull and spars. Though elephants have stood for their full-lengths,
+                                the living Leviathan has never yet fairly floated himself for his portrait. The living whale,
+                                in his full majesty and significance, is only to be seen at sea in unfathomable waters; and
+                                afloat the vast
+                                <b>bulk of him is out of sight, like a launched</b> line-of-battle ship; and out of that element
+                                it is a thing eternally impossible for mortal man to hoist him bodily into the air, so as
+                                to preserve all his mighty swells and undulations. And, not to speak of the highly presumable
+                                difference of contour between a young sucking whale and a full-grown Platonian Leviathan;
+                                yet, even in the case of one of those young sucking whales hoisted to a ship's deck, such
+                                is then the outlandish, eel-like, limbered, varying shape of him, that his precise expression
+                                the devil himself could not catch.
+                            </p>
+
+
+                            <div class="item-image">
+                                <img src="images/events/event3/2.jpg" alt="" />
+                            </div>
+
+                            <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
+                                Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History of
+                                Whales, in which he gives what he calls a picture of the Sperm Whale. Before showing that
+                                picture to any Nantucketer, you had best provide for your summary retreat from Nantucket.
+                                In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but a squash. Of course,
+                                he never had the benefit of a whaling voyage (such men seldom have), but whence he derived
+                                that picture, who can tell? Perhaps he got it as his scientific predecessor in the same field,
+                                Desmarest, got one of his authentic abortions; that is, from a Chinese drawing. And what
+                                sort of lively lads with the pencil those Chinese are, many queer cups and saucers inform
+                                us.
+                            </p>
+
+                            <p>As for the sign-painters' whales seen in the streets hanging over the shops of oil-dealers, what
+                                shall be said of them? They are generally Richard III. whales, with dromedary humps, and
+                                very savage; breakfasting on three or four sailor tarts, that is whaleboats full of mariners:
+                                their deformities floundering in seas of blood and blue paint.</p>
+
+                            <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints may
+                                be derived touching his true form. Not at all. For it is one of the more curious things about
+                                this Leviathan, that his skeleton gives very little idea of his general shape. Though Jeremy
+                                Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly
+                                conveys the idea of a burly-browed utilitarian old gentleman, with all Jeremy's other leading
+                                personal characteristics; yet nothing of this kind could be inferred from any leviathan's
+                                articulated bones. In fact, as the great Hunter says, the mere skeleton of the whale bears
+                                the same relation to the fully invested and padded animal as the insect does to the chrysalis
+                                that so roundingly envelopes it. This peculiarity is strikingly evinced in the head, as in
+                                some part of this book will be incidentally shown. It is also very curiously displayed in
+                                the side fin, the bones of which almost exactly answer to the bones of the human hand, minus
+                                only the thumb. This fin has four regular bone-fingers, the index, middle, ring, and little
+                                finger. But all these are permanently lodged in their fleshy covering, as the human fingers
+                                in an artificial covering. "However recklessly the whale may sometimes serve us," said humorous
+                                Stubb one day, "he can never be truly said to handle us without mittens."</p>
+
+                            <p>For all these reasons, then, any way you may look at it, you must needs conclude that the great
+                                Leviathan is that one creature in the world which must remain unpainted to the last. True,
+                                one portrait may hit the mark much nearer than another, but none can hit it with any very
+                                considerable degree of exactness. So there is no earthly way of finding out precisely what
+                                the whale really looks like. And the only mode in which you can derive even a tolerable idea
+                                of his living contour, is by going a whaling yourself; but by so doing, you run no small
+                                risk of being eternally stove and sunk by him. Wherefore, it seems to me you had best not
+                                be too fastidious in your curiosity touching this Leviathan.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Event 3 ends here-->
+            </div>
+
+            <!--Placeholders to show you how to create new events below can be erased by erasing
+                everything between the tag with class="container" and its closing tag-->
+        </div>
+        <!--#CONTAINER-->
+        <!-- note there should be 3 col-4-grid per each row -->
+        <div class="container">
+            <div class="row">
+                <div class="col-4-grid">
+                    <div class="item">
+                        <div class="front-end">
+                            <img src="#" alt="" />
+                        </div>
+                        <div class="back-end">
+                            <div class="item-image">
+                                <img src="#" alt="" />
+                            </div>
+                            <div class="item-title">Need Title 2</div>
+                            <p>As for the sign-painters'
+                                <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
+                                of them? They are generally Richard III. whales, with dromedary humps, and very savage; breakfasting
+                                on three or four sailor tarts, that is whaleboats full of mariners: their deformities floundering
+                                in seas of blood and blue paint.</p>
+
+                            <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
+                                Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History of
+                                Whales, in which he gives what he calls a picture of the Sperm Whale.
+                                <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
+                                retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but
+                                a squash. Of course, he never had the benefit of a whaling voyage (such men seldom have),
+                                but whence he derived that picture, who can tell? Perhaps he got it as his scientific predecessor
+                                in the same field, Desmarest, got one of his authentic abortions; that is, from a Chinese
+                                drawing. And what sort of lively lads with the pencil those Chinese are, many queer cups
+                                and saucers inform us.</p>
+
+                            <div class="item-image">
+                                <img src="images/inspirations/ocult2.jpg" alt="" />
+                            </div>
+
+                            <p>But these manifold mistakes in depicting the whale are not so very surprising after all. Consider!
+                                Most of the scientific drawings have been taken from the stranded fish; and these are about
+                                as correct as a drawing of a wrecked ship, with broken back, would correctly represent the
+                                noble animal itself in all its undashed pride of hull and spars. Though elephants have stood
+                                for their full-lengths, the living Leviathan has never yet fairly floated himself for his
+                                portrait. The living whale, in his full majesty and significance, is only to be seen at sea
+                                in unfathomable waters; and afloat the vast bulk of him is out of sight, like a launched
+                                line-of-battle ship; and out of that element it is a thing eternally impossible for mortal
+                                man to hoist him bodily into the air, so as to preserve all his mighty swells and undulations.
+                                And, not to speak of the highly presumable difference of contour between a young sucking
+                                whale and a full-grown Platonian Leviathan; yet, even in the case of one of those young sucking
+                                whales hoisted to a ship's deck, such is then the outlandish, eel-like, limbered, varying
+                                shape of him, that his precise expression the devil himself could not catch.</p>
+
+                            <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints may
+                                be derived touching his true form. Not at all. For it is one of the more curious things about
+                                this Leviathan, that his skeleton gives very little idea of his general shape. Though Jeremy
+                                Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly
+                                conveys the idea of a burly-browed utilitarian old gentleman, with all Jeremy's other leading
+                                personal characteristics; yet nothing of this kind could be inferred from any leviathan's
+                                articulated bones. In fact, as the great Hunter says, the mere skeleton of the whale bears
+                                the same relation to the fully invested and padded animal as the insect does to the chrysalis
+                                that so roundingly envelopes it. This peculiarity is strikingly evinced in the head, as in
+                                some part of this book will be incidentally shown. It is also very curiously displayed in
+                                the side fin, the bones of which almost exactly answer to the bones of the human hand, minus
+                                only the thumb. This fin has four regular bone-fingers, the index, middle, ring, and little
+                                finger. But all these are permanently lodged in their fleshy covering, as the human fingers
+                                in an artificial covering. "However recklessly the whale may sometimes serve us," said humorous
+                                Stubb one day, "he can never be truly said to handle us without mittens."</p>
+
+                            <p>For all these reasons, then, any way you may look at it, you must needs conclude that the great
+                                Leviathan is that one creature in the world which must remain unpainted to the last. True,
+                                one portrait may hit the mark much nearer than another, but none can hit it with any very
+                                considerable degree of exactness. So there is no earthly way of finding out precisely what
+                                the whale really looks like. And the only mode in which you can derive even a tolerable idea
+                                of his living contour, is by going a whaling yourself; but by so doing, you run no small
+                                risk of being eternally stove and sunk by him. Wherefore, it seems to me you had best not
+                                be too fastidious in your curiosity touching this Leviathan.</p>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
-                    <div class="col-4-grid">
-                        <div class="item">
-                            <div class="front-end">
-                                <div class="item-title">Need Blog Title </div>
+                <div class="col-4-grid">
+                    <div class="item">
+                        <div class="front-end">
+                            <img src="images/inspirations/random.jpg" alt="" />
+                        </div>
+                        
+                        <div class="back-end">
+                            <div class="item-image">
                                 <img src="images/inspirations/random.jpg" alt="" />
                             </div>
-                            <div class="back-end">
-                                <div class="item-image">
-                                    <img src="images/inspirations/random.jpg" alt="" />
-                                </div>
-                                <div class="item-title">Need Blog Title 2</div>
-                                <p>As for the sign-painters'
-                                    <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
-                                    of them? They are generally Richard III. whales, with dromedary humps, and very savage;
-                                    breakfasting on three or four sailor tarts, that is whaleboats full of mariners: their
-                                    deformities floundering in seas of blood and blue paint.</p>
+                            <div class="item-title">Need Title 2</div>
+                            <p>As for the sign-painters'
+                                <b> whales seen in the streets hanging over the shops of oil-dealers, </b>what shall be said
+                                of them? They are generally Richard III. whales, with dromedary humps, and very savage; breakfasting
+                                on three or four sailor tarts, that is whaleboats full of mariners: their deformities floundering
+                                in seas of blood and blue paint.</p>
 
-                                <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
-                                    Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History
-                                    of Whales, in which he gives what he calls a picture of the Sperm Whale.
-                                    <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
-                                    retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale,
-                                    but a squash. Of course, he never had the benefit of a whaling voyage (such men seldom
-                                    have), but whence he derived that picture, who can tell? Perhaps he got it as his scientific
-                                    predecessor in the same field, Desmarest, got one of his authentic abortions; that is,
-                                    from a Chinese drawing. And what sort of lively lads with the pencil those Chinese are,
-                                    many queer cups and saucers inform us.</p>
+                            <p>But the placing of the cap-sheaf to all this blundering business was reserved for the scientific
+                                Frederick Cuvier, brother to the famous Baron. In 1836, he published a Natural History of
+                                Whales, in which he gives what he calls a picture of the Sperm Whale.
+                                <b> Before showing that picture to any Nantucketer,</b> you had best provide for your summary
+                                retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but
+                                a squash. Of course, he never had the benefit of a whaling voyage (such men seldom have),
+                                but whence he derived that picture, who can tell? Perhaps he got it as his scientific predecessor
+                                in the same field, Desmarest, got one of his authentic abortions; that is, from a Chinese
+                                drawing. And what sort of lively lads with the pencil those Chinese are, many queer cups
+                                and saucers inform us.</p>
 
 
-                                <p>But these manifold mistakes in depicting the whale are not so very surprising after all.
-                                    Consider! Most of the scientific drawings have been taken from the stranded fish; and
-                                    these are about as correct as a drawing of a wrecked ship, with broken back, would correctly
-                                    represent the noble animal itself in all its undashed pride of hull and spars. Though
-                                    elephants have stood for their full-lengths, the living Leviathan has never yet fairly
-                                    floated himself for his portrait. The living whale, in his full majesty and significance,
-                                    is only to be seen at sea in unfathomable waters; and afloat the vast bulk of him is
-                                    out of sight, like a launched line-of-battle ship; and out of that element it is a thing
-                                    eternally impossible for mortal man to hoist him bodily into the air, so as to preserve
-                                    all his mighty swells and undulations. And, not to speak of the highly presumable difference
-                                    of contour between a young sucking whale and a full-grown Platonian Leviathan; yet, even
-                                    in the case of one of those young sucking whales hoisted to a ship's deck, such is then
-                                    the outlandish, eel-like, limbered, varying shape of him, that his precise expression
-                                    the devil himself could not catch.</p>
+                            <p>But these manifold mistakes in depicting the whale are not so very surprising after all. Consider!
+                                Most of the scientific drawings have been taken from the stranded fish; and these are about
+                                as correct as a drawing of a wrecked ship, with broken back, would correctly represent the
+                                noble animal itself in all its undashed pride of hull and spars. Though elephants have stood
+                                for their full-lengths, the living Leviathan has never yet fairly floated himself for his
+                                portrait. The living whale, in his full majesty and significance, is only to be seen at sea
+                                in unfathomable waters; and afloat the vast bulk of him is out of sight, like a launched
+                                line-of-battle ship; and out of that element it is a thing eternally impossible for mortal
+                                man to hoist him bodily into the air, so as to preserve all his mighty swells and undulations.
+                                And, not to speak of the highly presumable difference of contour between a young sucking
+                                whale and a full-grown Platonian Leviathan; yet, even in the case of one of those young sucking
+                                whales hoisted to a ship's deck, such is then the outlandish, eel-like, limbered, varying
+                                shape of him, that his precise expression the devil himself could not catch.</p>
 
-                                <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints
-                                    may be derived touching his true form. Not at all. For it is one of the more curious
-                                    things about this Leviathan, that his skeleton gives very little idea of his general
-                                    shape. Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of
-                                    one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman,
-                                    with all Jeremy's other leading personal characteristics; yet nothing of this kind could
-                                    be inferred from any leviathan's articulated bones. In fact, as the great Hunter says,
-                                    the mere skeleton of the whale bears the same relation to the fully invested and padded
-                                    animal as the insect does to the chrysalis that so roundingly envelopes it. This peculiarity
-                                    is strikingly evinced in the head, as in some part of this book will be incidentally
-                                    shown. It is also very curiously displayed in the side fin, the bones of which almost
-                                    exactly answer to the bones of the human hand, minus only the thumb. This fin has four
-                                    regular bone-fingers, the index, middle, ring, and little finger. But all these are permanently
-                                    lodged in their fleshy covering, as the human fingers in an artificial covering. "However
-                                    recklessly the whale may sometimes serve us," said humorous Stubb one day, "he can never
-                                    be truly said to handle us without mittens."</p>
+                            <p>But it may be fancied, that from the naked skeleton of the stranded whale, accurate hints may
+                                be derived touching his true form. Not at all. For it is one of the more curious things about
+                                this Leviathan, that his skeleton gives very little idea of his general shape. Though Jeremy
+                                Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly
+                                conveys the idea of a burly-browed utilitarian old gentleman, with all Jeremy's other leading
+                                personal characteristics; yet nothing of this kind could be inferred from any leviathan's
+                                articulated bones. In fact, as the great Hunter says, the mere skeleton of the whale bears
+                                the same relation to the fully invested and padded animal as the insect does to the chrysalis
+                                that so roundingly envelopes it. This peculiarity is strikingly evinced in the head, as in
+                                some part of this book will be incidentally shown. It is also very curiously displayed in
+                                the side fin, the bones of which almost exactly answer to the bones of the human hand, minus
+                                only the thumb. This fin has four regular bone-fingers, the index, middle, ring, and little
+                                finger. But all these are permanently lodged in their fleshy covering, as the human fingers
+                                in an artificial covering. "However recklessly the whale may sometimes serve us," said humorous
+                                Stubb one day, "he can never be truly said to handle us without mittens."</p>
 
-                                <p>For all these reasons, then, any way you may look at it, you must needs conclude that the
-                                    great Leviathan is that one creature in the world which must remain unpainted to the
-                                    last. True, one portrait may hit the mark much nearer than another, but none can hit
-                                    it with any very considerable degree of exactness. So there is no earthly way of finding
-                                    out precisely what the whale really looks like. And the only mode in which you can derive
-                                    even a tolerable idea of his living contour, is by going a whaling yourself; but by so
-                                    doing, you run no small risk of being eternally stove and sunk by him. Wherefore, it
-                                    seems to me you had best not be too fastidious in your curiosity touching this Leviathan.</p>
-                            </div>
+                            <p>For all these reasons, then, any way you may look at it, you must needs conclude that the great
+                                Leviathan is that one creature in the world which must remain unpainted to the last. True,
+                                one portrait may hit the mark much nearer than another, but none can hit it with any very
+                                considerable degree of exactness. So there is no earthly way of finding out precisely what
+                                the whale really looks like. And the only mode in which you can derive even a tolerable idea
+                                of his living contour, is by going a whaling yourself; but by so doing, you run no small
+                                risk of being eternally stove and sunk by him. Wherefore, it seems to me you had best not
+                                be too fastidious in your curiosity touching this Leviathan.</p>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-            </div>
-            <!--SHOW ITEM-->
-            <div class="show-item">
-                <div class="show-item-close"></div>
-                <!--CONTAINER600-->
-                <div class="container600 single">
 
-                </div>
-                <!--#CONTAINER600-->
-                <div class="show-item-back-top"></div>
+
+
+
+
             </div>
-            <!--#SHOW ITEM-->
         </div>
+        <!--SHOW ITEM-->
+        <div class="show-item">
+            <div class="show-item-close"></div>
+            <!--CONTAINER600-->
+            <div class="container600 single">
+
+            </div>
+            <!--#CONTAINER600-->
+            <div class="show-item-back-top"></div>
+        </div>
+        <!--#SHOW ITEM-->
+    </div>
     </div>
 
 
@@ -482,30 +498,33 @@
     </div>
 
     <!-- footer starts here -->
-
     <footer class="footer">
 
         <div class="social-media-buttons">
 
-
+            <!-- You can put a link to your facebook where it says #yourFBUrlGoesHere -->
             <div class="social-media-button facebook">
                 <a href="#yourFBUrlGoesHere">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </div>
-
+            <!-- You can put a link to your facebook where it says #yourInstagramUrlGoesHere -->
             <div class="social-media-button instagram">
                 <a href="#yourInstagramUrlGoesHere">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
 
+            <!-- To change the email shown when phone email click go to folder named js and find 
+                the file named footer instructions will be provided there -->
             <div class="social-media-button envelope">
                 <a onClick="emailPopulate()" id="email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </div>
 
+            <!-- To change the phone number shown when phone icon click go to folder named js and find 
+                the file named footer instructions will be provided there -->
             <div class="social-media-button phone">
                 <a onClick="phonePopulate()">
                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -515,9 +534,6 @@
     </footer>
 
 
-
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

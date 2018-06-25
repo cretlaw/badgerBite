@@ -4,13 +4,6 @@
   src: url('trench100free.otf');
 }
 
-/* importing local fonts dowloaded from the internet */
-
-@font-face {
-  font-family: absoluteXero;
-  src: url('Absolute Xero.otf');
-}
-
 /* setting the background for the whole page */
 
 html {
@@ -41,68 +34,8 @@ body {
   height: 12vmin;
 }
 
-.footer {
-  left: 0;
-  right: 0;
-  padding-top: 15vmin;
-  height: 12vmin;
-  text-align: center;
-  font-family: trench100, sans-serif;
-}
-
-/* social media styles on footer */
-
-.social-media-buttons {
-  text-align: center;
-}
-
-.social-media-button {
-  display: inline-block;
-  width: 8vmin;
-  height: 8vmin;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  position: relative;
-  margin-left: 6vmin;
-  margin-top: 2vmin;
-  cursor: pointer;
-  transition: border-radius .25s, transform .5s, border-color 1s;
-}
-
-.social-media-button i {
-  color: #fff;
-  font-size: 4vmin;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: color .5s;
-}
-
-.social-media-button:hover {
-  border-radius: 10%;
-  border-color: rgb(70, 70, 70);
-  transform: rotate(360deg);
-}
-
-.social-media-button.facebook:hover i {
-  color: #3b5998;
-}
-
-.social-media-button.instagram:hover i {
-  color: #e7c944;
-}
-
-.social-media-button.envelope:hover i {
-  color: #6e5494;
-}
-
-.social-media-button.phone:hover i {
-  color: #18dd32;
-}
-
 .site-content {
-  padding-top: 55vmin;
+  padding-top: 45vmin;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -111,20 +44,6 @@ body {
   align-content: center;
   text-align: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-  .site-content {
-    padding-top: 90vmin;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-  }
 }
 
 /* setting the styles for headlines */
@@ -176,17 +95,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-pack: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  box-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-orient: vertical;
   -webkit-box-orient: vertical;
-  box-direction: normal;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;

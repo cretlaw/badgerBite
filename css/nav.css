@@ -1,135 +1,320 @@
-/* importing local fonts dowloaded from the internet */
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
-@font-face {
-  font-family: trench100;
-  src: url('trench100free.otf');
-}
 
-/* Style for header */
+/* ====================================
+Navigation 
+==================================== */
 
-header {
-    position: relative;
-    /* background-image: url("https://media.giphy.com/media/Ab6TWc53LF16/giphy.gif"); */
-    background-image: url('static.gif')
-    
-}
-
-header ul.nav {
+.overlay-navigation {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    transform: translateY(-100%);
+  }
+  
+  .overlay-slide-down {
+    transition: all .4s ease-in-out;
+    transform: translateY(0)
+  }
+  
+  .overlay-slide-up {
+    transition: all .8s ease-in-out;
+    transform: translateY(-100%)
+  }
+  nav{
+    position: fixed;
+  }
+  nav,
+  nav ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  /* if you add or remove links on the navigation bar you need to change the size of the area around
+  each link you can do so by dividing the number of links by 100 and putting the results in 
+  flex basis. For example if you had 4 links 100/4= 25 so flex-basis:25%  Note: This is the the first step
+  out of 4 steps not including the adding or removing the link in the html file */
+  nav ul li {
+    flex-basis: 33.3%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     overflow: hidden;
-}
-
-header ul.nav li {
+    transform: translateY(-100%);
+  }
+  
+  nav li a {
     position: relative;
-    float: left;
-    width: 33.33%;
-}
-
-header ul.nav li a {
-    display: block;
-    height: 0px;
-    opacity: 0;
-    font-family: trench100, sans-serif;
-    font-size: 3em;
-    font-weight: 900;
-    line-height: 20vmin;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    cursor: default;
-    transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-}
-
-header ul.nav li a:hover {
+    top: 46%;
     color: #fff;
-    background-color: rgba(34, 32, 32, 0.4);
-}
-
-@media screen and (max-width: 600px) {
-    header ul.nav li {
-        float: none;
-        width: 100%;
-        
-    }
-    header ul.nav li a {
-        height: 0;
-        font-size: 2em;
-    }
-}
-
-/* Style for header with active class name */
-
-header.active ul.nav li a {
-    height: 20vmin;
-    opacity: 1;
-    line-height: 20vmin;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 600px) {
-    header.active ul.nav li a {
-        height: 10vmin;
-        line-height: 10vmin;
-        /* border-bottom: 1px solid #222b2f; */
-    }
-}
-
-/* Style for the plus button */
-
-button.toggle-nav {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 30px);
-    width: 60px;
-    height: 35px;
-    background: whitesmoke; 
-    font: 400 1.2em 'Allan', serif;
-    color: rgb(33, 194, 178);
-    border: none;
-    line-height: 30px;
-    vertical-align: middle;
-    outline: none;
-    cursor: pointer;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-}
-
-button.toggle-nav:hover {
-    height: 50px;
-    
-}
-
-button.toggle-nav span {
+    text-transform: uppercase;
+    font-family: trench100, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
     display: block;
-    transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    
-}
+    text-align: center;
+    /* if you want to change the size of the text in navigation menu do so below */
+    font-size: 10vmin;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* you can change the colors of the navigation bar background when clicked here */
+  nav li:nth-of-type(1) {
+    background-color: #29363B
+  }
+  
+  nav li:nth-of-type(2) {
+    background-color: rgb(55, 170, 141);
+  }
+  
+  nav li:nth-of-type(3) {
+    background-color: #29363B;
+  }
+  /* If you want to add a fourth or more links. Note this is the second step
+  nav li:nth-of-type(3) {
+    background-color: choose your backroud color here;
+  }
+   */
+  
+  .slide-in-nav-item {
+    animation: slide-in-nav-item 0.4s linear 1 .2s both;
+  }
+  
+  .slide-in-nav-item-delay-1 {
+    animation: slide-in-nav-item 0.4s linear 1 .4s both;
+  }
+  
+  .slide-in-nav-item-delay-2 {
+    animation: slide-in-nav-item 0.4s linear 1 .6s both;
+  }
+  
+  .slide-in-nav-item-delay-3 {
+    animation: slide-in-nav-item 0.4s linear 1 .8s both;
+  }
 
-/* Style for the plus button when header has active classe name */
-
-header.active button.toggle-nav {
-    top: 20vmin;
-    background-color: whitesmoke;
-
-}
-
-header.active button.toggle-nav span {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-}
-
-@media screen and (max-width: 600px) {
-    button.toggle-nav {
-        top: 0;
+  /* If you want to add a fourth or more links. Note this is the third step
+  .slide-in-nav-item-delay-4 {
+    animation: slide-in-nav-item 0.4s linear 1 .8s both;
+  } */
+  
+  .slide-in-nav-item-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .5s both;
+  }
+  
+  .slide-in-nav-item-delay-1-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .4s both;
+  }
+  
+  .slide-in-nav-item-delay-2-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .3s both;
+  }
+  
+  .slide-in-nav-item-delay-3-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
+  }
+  /* If you want to add a fourth or more links. Note this is the fourth and last step
+  slide-in-nav-item-delay-3-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
+  } */
+  
+  
+  
+  /* ====================================
+  Burger king
+  ==================================== */
+  
+  .open-overlay {
+    position: absolute;
+    right: 5rem;
+    top: 3.2rem;
+    z-index: 100;
+    width: 34px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .open-overlay span {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .animate-top-bar {
+    animation: animate-top-bar .6s linear 1 both
+  }
+  
+  .animate-bottom-bar {
+    animation: animate-bottom-bar .6s linear 1 both
+  }
+  
+  .animate-middle-bar {
+    animation: animate-middle-bar .6s linear 1 both
+  }
+  
+  .animate-out-top-bar {
+    animation: animate-out-top-bar .6s linear 1 both
+  }
+  
+  .animate-out-bottom-bar {
+    animation: animate-out-bottom-bar .6s linear 1 both
+  }
+  
+  .animate-out-middle-bar {
+    animation: animate-out-middle-bar .6s linear 1 both
+  }
+  
+  /* ====================================
+  Animation keyframes
+  ==================================== */
+  
+  @keyframes slide-in-nav-item {
+    from {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
     }
-   header.active button.toggle-nav {
-        top: 30vmin;
+    to {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
     }
-}
+  }
+  
+  @keyframes slide-in-nav-item-reverse {
+    from {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    to {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
+    }
+  }
+  
+  @keyframes animate-top-bar {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      -webkit-transform: translateY(9px);
+      transform: translateY(9px)
+    }
+    80% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      background-color: #fff
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+  
+  @keyframes animate-bottom-bar {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      -webkit-transform: translateY(-9px);
+      transform: translateY(-9px)
+    }
+    80% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      background-color: #fff;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+  
+  @keyframes animate-middle-bar {
+    0% {
+      background-color: #fff;
+    }
+    80% {
+      background-color: #fff;
+    }
+    100% {
+      background-color: #29363B;
+    }
+  }
+  
+  @keyframes animate-out-top-bar {
+    0% {
+      background-color: #29363B
+    }
+    50% {
+      -webkit-transform: translateY(9px);
+      transform: translateY(9px)
+    }
+    80% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      background-color: #29363B
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #FFF;
+    }
+  }
+  
+  @keyframes animate-out-bottom-bar {
+    0% {
+      background-color: #29363B
+    }
+    50% {
+      -webkit-transform: translateY(-9px);
+      transform: translateY(-9px)
+    }
+    80% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      background-color: #29363B;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #FFF;
+    }
+  }
+  
+  @keyframes animate-out-middle-bar {
+    0% {
+      background-color: #29363B
+    }
+    80% {
+      background-color: #29363B;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    nav ul li a {
+      font-size: 3.4vmin;
+    }
+    .open-overlay {
+      right: 1rem;
+    }
+  }
+  

@@ -15,9 +15,11 @@
 
     <!-- personal css stylesheets -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/imageGallery.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
 
 
 
@@ -29,17 +31,39 @@
 
 
     <!-- this is where navigation start -->
-    <header>
-        <button class="toggle-nav">
-            <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
-        </button>
-        <ul class="nav">
-            <li class="loud"><a href="index.html">Home</a></li>
-            <li class="loud"><a href="collection.html">Collection</a></li>
-            <li class="loud"><a href="events.html">Events</a></li>
-        </ul>
-    </header>
+    -- this is where navigation start -->
+    <div class="overlay-navigation">
+        <nav role="navigation">
 
+            <!-- the href path is where user is directed to when clicking -->
+            <!-- if you want to add an additional page and added to the navigation bar you 
+            can added here by wrapping it in the li tags similar to the other 3 that are
+            already here but you need to make some additional changes in nav.css. There
+            will be instructions there on how to do it -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+                
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- this creates the thre lines that are on right side AKA hamburger menu -->
+    <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+    </div>
 
    
 
@@ -66,43 +90,47 @@
 
         <div class="container">
             <div class="gallery">
+                <!-- Here are where all the images are linked you can change them as you please. I created a 
+                projects folder inside the images folder put any project photos in there and then you 
+                can add the path here just like the ones that are already here. Note that whatever you 
+                put in alt will be that image's project name and description when the image is clicked. -->
                 <img src="images/projects/VanessaVargas_01.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                 <img src="images/projects/VanessaVargas_02.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                 <img src="images/projects/VanessaVargas_03.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
                 
                     <img src="images/projects/VanessaVargas_05.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
                     
 
                     <img src="images/projects/VanessaVargas_06.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_07.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_08.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_09.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_10.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_11.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
 
                     <img src="images/projects/VanessaVargas_12.jpg"
-                    alt="project name" width="100%" height="auto" class="gallery-img" />
+                    alt="Project Name - Artwork description" width="100%" height="auto" class="gallery-img" />
             </div>
         </div>
 
-        <!-- Do not delte fakeClass used for modal so that images get enlarged when clicked -->
+        <!-- Do not delete fakeClass used for modal so that images get enlarged when clicked -->
         <div class="fakeClass"></div>
 
         <div class="push"></div>
@@ -114,25 +142,29 @@
 
         <div class="social-media-buttons">
 
-
+            <!-- You can put a link to your facebook where it says #yourFBUrlGoesHere -->
             <div class="social-media-button facebook">
                 <a href="#yourFBUrlGoesHere">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </div>
-
+            <!-- You can put a link to your facebook where it says #yourInstagramUrlGoesHere -->
             <div class="social-media-button instagram">
                 <a href="#yourInstagramUrlGoesHere">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
-
+          
+              <!-- To change the email shown when phone email click go to folder named js and find 
+            the file named footer instructions will be provided there -->
             <div class="social-media-button envelope">
                 <a onClick="emailPopulate()" id="email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </div>
 
+              <!-- To change the phone number shown when phone icon click go to folder named js and find 
+            the file named footer instructions will be provided there -->
             <div class="social-media-button phone">
                 <a onClick="phonePopulate()">
                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -144,7 +176,7 @@
 
 
 
-    <!-- Optional JavaScript -->
+   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
