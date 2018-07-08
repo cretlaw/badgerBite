@@ -11,12 +11,13 @@ $(function () {
     $('img').on('click', function () {
         var imagePath = $("img").attr("src");
         // z=document.querySelectorAll('img');
-        var x = document.querySelector(".fakeClass").innerHTML = '<img id="myImg" src="imagePath" alt="">' +
-            '<div id="myModal" class="modal">' +
+        var x = document.querySelector(".fakeClass").innerHTML = 
+        '<img id="myImg" src="#" alt="">' +
+        '<div id="myModal" class="modal">' +
             '<span class="close">&times;</span>' +
             '<img class="modal-content" id="img01">' +
             '<div id="caption"></div>' +
-            '</div>'
+        '</div>'
 
 
         
@@ -28,11 +29,21 @@ $(function () {
         var img = document.getElementById('myImg');
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
+    
+        var strArr = this.alt.split("/");
+        var infoText;
 
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-
+       for (let index = 0; index < strArr.length; index++){
+           if(index === 0)
+                infoText = strArr[index];
+            else{
+                infoText += "<br>"+strArr[index];        }
+       }
+       
+       
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       captionText.innerHTML = infoText;
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
