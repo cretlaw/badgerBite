@@ -1,3 +1,7 @@
+@font-face {
+    font-family: trench100;
+    src: url('trench100free.otf');
+  }
 /* Style the Image Used to Trigger the Modal */
 
 #myImg {
@@ -50,8 +54,9 @@
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 
 #caption {
+    font-family: trench100, sans-serif;
     margin: auto;
-    font-size: 2.2vmax;
+    font-size: 2vmax;
     display: block;
     width: 80%;
     max-width: 700px; 
