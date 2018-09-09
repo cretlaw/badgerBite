@@ -15,30 +15,7 @@
     -moz-transition: 0.2s;
     transition: 0.2s;
   }
-  .arrow#left-arrow {
-    
-    /* left: 1vmin; */
-    /* -webkit-transform: translate(-11em, -90vmin);
-    -moz-transform: translate(-11em, -90vmin);
-    -ms-transform: translate(-11em, -90vmin);
-    -o-transform: translate(-11em, -90vmin);
-    transform: translate(-11em, -90vmin); */
-  }
-  .arrow#right-arrow {
-
-    /* right: 1vmin; */
-/* 
-    -webkit-transform: translate(10em, -90vmin);
-    -moz-transform: translate(10em, -90vmin);
-    -ms-transform: translate(10em, -90vmin);
-    -o-transform: translate(10em, -90vmin);
-    transform: translate(10em, -90vmin); */
-  }
-    /* -webkit-transform: translate(80vmin, -40%);
-    -moz-transform: translate(80vmin, -40%);
-    -ms-transform: translate(80vmin, -40%);
-    -o-transform: translate(80vmin, -40%);
-    transform: translate(80vmin, -40%); */
+  
   
   .arrow:hover {
     color: rgb(47, 241, 193);
@@ -56,8 +33,7 @@
     transform: translate(-50%, -50%);
     width: 80vmin;
     height: 27vmin;
-    /* width: 600px;
-    height: 200px; */
+    
   }
   
   .slide {
@@ -135,3 +111,4 @@
     background-image: url("../images/projects/VV-13.jpg");
   }
   
+ 
