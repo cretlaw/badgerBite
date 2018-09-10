@@ -43,7 +43,7 @@ Navigation
   flex basis. For example if you had 4 links 100/4= 25 so flex-basis:25%  Note: This is the the first step
   out of 4 steps not including the adding or removing the link in the html file */
   nav ul li {
-    flex-basis: 33.3%;
+    flex-basis: 25%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -63,7 +63,7 @@ Navigation
     display: block;
     text-align: center;
     /* if you want to change the size of the text in navigation menu do so below */
-    font-size: 10vmin;
+    font-size: 7vmin;
   }
   
   a:hover,
@@ -83,6 +83,10 @@ Navigation
   
   nav li:nth-of-type(3) {
     background-color: #29363B;
+  }
+
+  nav li:nth-of-type(4) {
+    background-color: rgb(55, 170, 141);
   }
   /* If you want to add a fourth or more links. Note this is the second step
   nav li:nth-of-type(3) {
@@ -106,6 +110,9 @@ Navigation
     animation: slide-in-nav-item 0.4s linear 1 .8s both;
   }
 
+  .slide-in-nav-item-delay-4 {
+    animation: slide-in-nav-item 0.4s linear 1 .8s both;
+  }
   /* If you want to add a fourth or more links. Note this is the third step
   .slide-in-nav-item-delay-4 {
     animation: slide-in-nav-item 0.4s linear 1 .8s both;
@@ -124,6 +131,10 @@ Navigation
   }
   
   .slide-in-nav-item-delay-3-reverse {
+    animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
+  }
+
+  .slide-in-nav-item-delay-4-reverse {
     animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
   }
   /* If you want to add a fourth or more links. Note this is the fourth and last step
