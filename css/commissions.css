@@ -1,0 +1,59 @@
+/* cards with stretch to 100% width by default, so set width or max-width to constrain the card's width */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+@font-face {
+  font-family: trench100;
+  src: url('trench100free.otf');
+}
+
+.card{
+
+    margin-bottom: 30px;
+}
+
+.card-body {
+    background-color: black !important;
+}
+
+.card-title {
+    font-family: trench100;
+    color: rgb(47, 241, 193);
+    margin: 0;
+    
+    font-size: 1.5rem;
+    
+}
+
+.card-text{
+    font-family: trench100;
+    color: rgb(47, 241, 193);
+    font-size: 1.2rem;
+    
+}
+
+.price-availability{
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: rgb(47, 241, 193);
+    font-size: 1rem;
+
+}
+.carousel-indicators .active{
+    background-color: rgb(47, 241, 193) !important;
+}
+
+.carousel-indicators li{
+   background-color: #29363B;
+}
+
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
