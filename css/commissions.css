@@ -56,4 +56,7 @@
   height: auto;
 }
 
-
+ .fa-arrow-circle-left, .fa-arrow-circle-right{
+    font-size: 1.5rem;
+    color:rgb(47, 241, 193);
+}
