@@ -13,14 +13,14 @@
   }
   
   .first {
-    background-color: #C5075C;
-    background-image: url("https://media.giphy.com/media/U9T62ec4XrIVG/giphy.gif");
+    background-color: rgba(150, 9, 179, 0.968);
+    background-image: url("https://media.giphy.com/media/oX7VUex1IZkGHoPW8e/giphy.gif");
     -webkit-transform: translateX(-65%) translateY(-50%);
             transform: translateX(-65%) translateY(-50%);
   }
   
   .second {
-    background-color: #03B897;
+    background-color: rgb(3, 222, 247);
     background-image: url("https://media.giphy.com/media/3o72F7ryUWTBwljkWI/giphy.gif");
     -webkit-transform: translateX(-35%) translateY(-50%);
             transform: translateX(-35%) translateY(-50%);

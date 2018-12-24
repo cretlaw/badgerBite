@@ -81,34 +81,50 @@
   
 
   /* this is where you add the image path to projects you want to showcase */
-  #slide-left .bg-previous {
-    background-image: url("../images/projects/Collages/VV-13.jpg");
-  }
+  
+
+
+
+
+
   #slide-left .bg-current {
     background-image: url("../images/projects/Collages/VV-1.jpg");
   }
+
+  #slide-center .bg-current {
+    background-image: url("../images/projects/Collages/VV-5.jpg");
+  }
+  #slide-right .bg-current {
+    background-image: url("../images/projects/Collages/VV-8.jpg");
+  }
+
+
+
+
+
   #slide-left .bg-next {
     background-image: url("../images/projects/Collages/VV-3.jpg");
   }
   
-  #slide-center .bg-previous {
-    background-image: url("../images/projects/Collages/VV-12.jpg");
-  }
-  #slide-center .bg-current {
-    background-image: url("../images/projects/Collages/VV-5.jpg");
-  }
   #slide-center .bg-next {
-    background-image: url("../images/projects/Collages/VV-4.jpg");
+    background-image: url("../images/projects/Collages/VV-2.jpg");
+  }
+  
+  #slide-right .bg-next {
+    background-image: url("../images/projects/Collages/VV-14.jpg");
+  }
+  
+
+
+  #slide-left .bg-previous {
+    background-image: url(../images/projects/Collages/VV-16.jpg);
+  }
+
+  #slide-center .bg-previous {
+    background-image: url(" ../images/projects/Collages/VV-4.jpg");
   }
   
   #slide-right .bg-previous {
-    background-image: url("../images/projects/Collages/VV-10.jpg");
+    background-image: url("../images/projects/Collages/VV-15.jpg");
   }
-  #slide-right .bg-current {
-    background-image: url("../images/projects/Collages/VV-2.jpg");
-  }
-  #slide-right .bg-next {
-    background-image: url("../images/projects/Collages/VV-35comp.jpg");
-  }
-  
  

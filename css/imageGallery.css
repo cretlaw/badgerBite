@@ -7,12 +7,13 @@
     column-gap: 30px;
     margin-top: 30px;
     overflow: hidden;
+    margin-top: 6rem;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
-    transition: 500ms;
+    transition: 500ms;   
     margin-bottom: 30px;
     opacity: 0.8;
     page-break-inside: avoid;

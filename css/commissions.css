@@ -56,7 +56,22 @@
   height: auto;
 }
 
- .fa-arrow-circle-left, .fa-arrow-circle-right{
-    font-size: 1.5rem;
-    color:rgb(47, 241, 193);
+.fa-bandcamp:before{
+    font-size: 3rem;
+    color: rgb(47, 241, 193)
+}
+
+.fa-compact-disc:before{
+    font-size: 3rem;
+    color: rgb(47, 241, 193)
+}
+
+.fa-arrow-circle-left:before {
+    font-size: 2rem;
+    color: rgb(47, 241, 193);
+}
+.fa-arrow-circle-right:before {
+
+    font-size: 2rem;
+    color: rgb(47, 241, 193);
 }

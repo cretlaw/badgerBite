@@ -30,9 +30,7 @@ $(function () {
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
     
-        
         var strArr = this.alt.split("*");
-
         var infoText;
 
        for (let index = 0; index < strArr.length; index++){
